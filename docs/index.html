@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+  <title>Главная</title>
+  <meta charset="UTF-8" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="shortcut icon" href="favicon.ico" />
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.css"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+  />
+  <link rel="stylesheet" href="css/template_styles.css" />
+
+  <!-- <meta name="robots" content="noindex, nofollow"> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+  <script src="js/app.js"></script>
+</head>
+
+
+  <body class="home">
+    <div class="wrapper">
+      <header class="header position-fixed w-100">
+  <div class="container">
+    <div class="row">
+      <div class="col-2 position-relative header__box-logo">
+        <div class="text-center">
+          <a href="/" class="d-block mw-100 text-center">
+            <img src="images/icons/logo.svg" alt="logo" class="mw-100" />
+          </a>
+        </div>
+      </div>
+      <div class="col-7">
+        <div class="header__top">
+          <ul class="header__social social d-flex gap-2">
+            <li>
+              <a
+                href="#"
+                class="social__link social__link--fb"
+                title="facebook"
+              ></a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="social__link social__link--vk"
+                title="В контакте"
+              ></a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="social__link social__link--ok"
+                title="Одноклассники"
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <div class="header__bottom">
+          <nav class="header-menu d-block">
+            <ul
+              class="d-flex h-100 flex-column flex-lg-row justify-content-center justify-content-lg-between text-nowrap ps-0 py-2"
+            >
+              <li class="py-1 py-lg-0 text-uppercase fw-600 fs-14 ls-9">
+                <a href="#">Услуги</a>
+                <a href="#">Преимущества</a>
+                <a href="#">Тарифы</a>
+                <a href="#">Наши клиенты</a>
+                <a href="#">Блог</a>
+                <a href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <col-3>
+        <div class="header__box d-flex flex-column">
+          <a href="tel:8(499) 404 00 99" class="header__link">
+            +7 (499) 404 00 99
+          </a>
+          <a
+            data-popup="#callback"
+            href="#callback"
+            role="button"
+            class="header__link"
+          >
+            Оставить заявку на продвижение
+          </a>
+        </div>
+      </col-3>
+    </div>
+  </div>
+</header>
+
+
+      <main>
+        <section class="promo d-none" id="promo">
+  <div class="container">
+    <div class="promo__slider slider">
+      <span class="slider__counter">1</span>
+      <h1 class="slider__title">Увеличьте количество новых клиентов</h1>
+      <div class="slider__box__img">
+        <picture><source srcset="images/woman.webp" type="image/webp"><img src="images/woman.png" alt="promo" class="slider__img" /></picture>
+      </div>
+    </div>
+    <div class="promo__content position-absolute d-flex flex-column">
+      <a
+        data-popup="#callback"
+        href="#callback"
+        role="button"
+        class="promo__link"
+      >
+        Оставить заявку на продвижение <span class="promo__span"></span>
+      </a>
+      <div class="promo__box d-flex gap-4">
+        <div class="promo__box-logo">
+          <img src="images/icons/logo.svg" alt="logo" class="mw-100" />
+        </div>
+        <h2 class="promo__subtitle">
+          ТКК Fitness - комплекстное PROдвижение вашего фитнес-клуба.
+        </h2>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="services d-none" id="services">
+  <div class="container">
+    <div class="row">
+      <div class="col-4">
+        <div class="services__box-img position-relative">
+          <picture><source srcset="images/forma.webp" type="image/webp"><img src="images/forma.png" alt="forma" class="services__img" /></picture>
+          <p class="services__text position-absolute">
+            Мы поможем вам в продвижении вашего бизнеса
+          </p>
+        </div>
+        <form action="#" class="services__form form">
+          <div class="form-group position-relative">
+            <input
+              type="text"
+              class="form-control form__input"
+              name="tel"
+              id="tel"
+              placeholder=""
+              required
+            />
+            <label
+              for="tel"
+              class="form-label form__label fs-16 text-info position-absolute top-50 mb-0"
+              >+7(___) ___-__-__*</label
+            >
+          </div>
+          <button
+            type="submit"
+            class="form__btn btn fs-16 fw-600 px-3 py-3 btn-primary w-100 border-0 mb-4"
+          >
+            Оставить заявку на продвижение
+          </button>
+        </form>
+      </div>
+      <div class="col-7 offset-1">
+        <h2 class="services__title">Услуги для фитнес клуба</h2>
+        <ul class="services__list d-flex flex-wrap">
+          <li class="services__item">Разработка сайта</li>
+          <li class="services__item">Контекстная реклама</li>
+          <li class="services__item">SMM-продвижение</li>
+          <li class="services__item">Редизайн и ребрендинг</li>
+          <li class="services__item">Медийная и видеореклама</li>
+          <li class="services__item">Подключение коллтрекинга</li>
+          <li class="services__item">Настройка сквозной аналитики</li>
+          <li class="services__item">SEO-продвижение</li>
+          <li class="services__item">Таргетированная реклама</li>
+          <li class="services__item">Разработка брендбука</li>
+          <li class="services__item">
+            Реклама в мессенджерах (Viber, Telegram и др)
+          </li>
+          <li class="services__item">
+            SMS-рассылки для фитнес-клуба по базе МТС
+          </li>
+          <li class="services__item">
+            Реклама в геосервисах Яндекса (Справочник, Навигатор)
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="advantages d-none" id="advantages">
+  <div class="container">
+    <div class="row">
+      <div class="col-4">
+        <h2 class="advantages__title">Преимущества работы с</h2>
+        <p class="advantages__text">Мы работаем на результат!</p>
+      </div>
+      <div class="col-8">
+        <ol class="advantages__list">
+          <li class="advantages__item">
+            Опыт работы в области фитнеса - более 7 лет
+          </li>
+          <li class="advantages__item">
+            Продвижение 40+ клубов по всей территории России и Беларуси
+          </li>
+          <li class="advantages__item">
+            Быстрая реализация поставленных задач на основе имеющихся наработок
+          </li>
+          <li class="advantages__item">
+            Гарантированный результат продвижения
+          </li>
+          <li class="advantages__item">
+            Мы точно знаем, что нужно вашему бизнесу, имея огромный опыт работы
+            в сфере фитнеса
+          </li>
+          <li class="advantages__item">
+            Настраиваем сквозную аналитику для получения максимально прозрачной
+            статистики
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="banner d-none" id="banner">
+  <div class="container">
+    <div class="col-6 col-offset-6">
+      <h2 class="banner__title">Отсутствие конкурентных пересечений</h2>
+      <p class="banner__text">
+        Если в нашей компании работают клубы из одного георасположения, то
+        работу над проектом ведут разные специалисты, которые не знают бюджетов
+        конкурентов, и имеют свои собственные KPI. Поэтому они заинтересованы
+        каждый в лучшем продвижении своего проекта.
+      </p>
+    </div>
+  </div>
+</section>
+
+        <section class="prices d-none" id="prices">
+  <div class="container">
+    <h2 class="prices__title">Сколько стоит продвижение фитнес-клуба</h2>
+    <table class="prices__table"></table>
+    <div class="prices__table table-responsive">
+      <table class="table">
+        <thead>
+          <tr>
+            <th></th>
+            <th><b>FIT</b>Start</th>
+            <th><b>FIT</b>Standart</th>
+            <th><b>FIT</b>Business</th>
+            <th><b>FIT</b>PRO</th>
+            <th><b>FIT</b>Custom</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="">
+            <td></td>
+            <td>50 000 ₽/мес</td>
+            <td>70 000 ₽/мес</td>
+            <td>100 000 ₽/мес</td>
+            <td>150 000 ₽/мес</td>
+            <td>Custom</td>
+          </tr>
+          <tr class="">
+            <td>Разработка лендинга для рекламы</td>
+            <td><img src="images/icons/remove.svg" alt="remove" /></td>
+            <td><img src="images/icons/check.svg" alt="check" /></td>
+            <td><img src="images/icons/check.svg" alt="check" /></td>
+            <td><img src="images/icons/check.svg" alt="check" /></td>
+            <td><img src="images/icons/check.svg" alt="check" /></td>
+          </tr>
+          <tr class="">
+            <td>Разработка сайта для SEO</td>
+            <td><img src="images/icons/remove.svg" alt="remove" /></td>
+            <td><img src="images/icons/remove.svg" alt="remove" /></td>
+            <td><img src="images/icons/remove.svg" alt="remove" /></td>
+            <td><img src="images/icons/check.svg" alt="check" /></td>
+            <td><img src="images/icons/check.svg" alt="check" /></td>
+          </tr>
+          <tr class="">
+            <td>SEO-продвижение</td>
+            <td><img src="images/icons/remove.svg" alt="remove" /></td>
+            <td><img src="images/icons/remove.svg" alt="remove" /></td>
+            <td><img src="images/icons/check.svg" alt="check" /></td>
+            <td><img src="images/icons/check.svg" alt="check" /></td>
+            <td><img src="images/icons/check.svg" alt="check" /></td>
+          </tr>
+          <tr class="">
+            <td>Контекстная реклама</td>
+            <td><img src="images/icons/check.svg" alt="check" /></td>
+            <td><img src="images/icons/check.svg" alt="check" /></td>
+            <td><img src="images/icons/check.svg" alt="check" /></td>
+            <td><img src="images/icons/check.svg" alt="check" /></td>
+            <td><img src="images/icons/check.svg" alt="check" /></td>
+          </tr>
+          <tr class="">
+            <td>Таргетированная реклама</td>
+            <td><img src="images/icons/check.svg" alt="check" /></td>
+            <td><img src="images/icons/check.svg" alt="check" /></td>
+            <td><img src="images/icons/check.svg" alt="check" /></td>
+            <td><img src="images/icons/check.svg" alt="check" /></td>
+            <td><img src="images/icons/check.svg" alt="check" /></td>
+          </tr>
+          <tr class="">
+            <td>SMM-продвижение</td>
+            <td><img src="images/icons/remove.svg" alt="remove" /></td>
+            <td><img src="images/icons/remove.svg" alt="remove" /></td>
+            <td><img src="images/icons/remove.svg" alt="remove" /></td>
+            <td><img src="images/icons/check.svg" alt="check" /></td>
+            <td><img src="images/icons/check.svg" alt="check" /></td>
+          </tr>
+          <tr class="">
+            <td>Разработка брендбука</td>
+            <td><img src="images/icons/remove.svg" alt="remove" /></td>
+            <td><img src="images/icons/remove.svg" alt="remove" /></td>
+            <td><img src="images/icons/remove.svg" alt="remove" /></td>
+            <td><img src="images/icons/remove.svg" alt="remove" /></td>
+            <td><img src="images/icons/check.svg" alt="check" /></td>
+          </tr>
+          <tr class="">
+            <td>Редизайн и ребрендинг</td>
+            <td><img src="images/icons/remove.svg" alt="remove" /></td>
+            <td><img src="images/icons/remove.svg" alt="remove" /></td>
+            <td><img src="images/icons/remove.svg" alt="remove" /></td>
+            <td><img src="images/icons/check.svg" alt="check" /></td>
+            <td><img src="images/icons/check.svg" alt="check" /></td>
+          </tr>
+          <tr class="">
+            <td>Рекомендуемый бюджет в месяц на продвижение</td>
+            <td>от 10 000 ₽</td>
+            <td>от 20 000 ₽</td>
+            <td>от 30 000 ₽</td>
+            <td>от 50 000 ₽</td>
+            <td>Custom</td>
+          </tr>
+          <tr class="">
+            <td>SMS-рассылки для фитнес-клуба по базе МТС</td>
+            <td>от 70 000 ₽</td>
+            <td>от 100 000 ₽</td>
+            <td>от 200 000 ₽</td>
+            <td>от 500 000 ₽</td>
+            <td>Custom</td>
+          </tr>
+          <tr class="">
+            <td>Медийная и видеореклама</td>
+            <td>от 50 000 ₽</td>
+            <td>от 70 000 ₽</td>
+            <td>от 100 000 ₽</td>
+            <td>от 150 000 ₽</td>
+            <td>Custom</td>
+          </tr>
+          <tr class="">
+            <td></td>
+            <td>Заказать</td>
+            <td>Заказать</td>
+            <td>Заказать</td>
+            <td>Заказать</td>
+            <td>Заказать</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+ <section class="trust d-none" id="trust">
+  <div class="container">
+    <h2 class="trust__title">Нам доверяют продвижение</h2>
+    <div class="trust__slider slider">
+      <div class="slider__box__img">
+        <picture><source srcset="images/logo1.webp" type="image/webp"><img src="images/logo1.png" alt="logo" class="slider__img" /></picture>
+      </div>
+      <div class="slider__box__img">
+        <picture><source srcset="images/logo2.webp" type="image/webp"><img src="images/logo2.png" alt="logo" class="slider__img" /></picture>
+      </div>
+      <div class="slider__box__img">
+        <picture><source srcset="images/logo3.webp" type="image/webp"><img src="images/logo3.png" alt="logo" class="slider__img" /></picture>
+      </div>
+      <div class="slider__box__img">
+        <picture><source srcset="images/logo4.webp" type="image/webp"><img src="images/logo4.png" alt="logo" class="slider__img" /></picture>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="map d-none" id="map">
+  <div class="container">
+    <picture><source srcset="images/map.webp" type="image/webp"><img src="images/map.png" alt="map" class="" /></picture>
+  </div>
+</section>
+
+      </main>
+      <footer class="footer d-none">
+  <div class="container">
+    <div class="row">
+      <div class="col-4">
+        <h3 class="footer__title">Эксперты в области продвижения Фитнеса</h3>
+      </div>
+      <div class="col-4">
+        <div class="d-flex flex-column">
+          <a
+            href="mailto:manager@target-kc.ru "
+            class="d-flex gap-2 mb-4 align-items-center"
+          >
+            manager@target-kc.ru
+          </a>
+          <ul class="footer__social social d-flex gap-2">
+            <li>
+              <a
+                href="#"
+                class="social__link social__link--fb"
+                title="facebook"
+              ></a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="social__link social__link--vk"
+                title="В контакте"
+              ></a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="social__link social__link--ok"
+                title="Одноклассники"
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="d-flex flex-column">
+          <a href="tel:8(499) 404 00 99" class="footer__link">
+            +7 (499) 404 00 99
+          </a>
+          <a
+            data-popup="#callback"
+            href="#callback"
+            role="button"
+            class="footer__link"
+          >
+            Заказать обратный звонок
+          </a>
+        </div>
+      </div>
+      <div class="col-4">
+        <small> ©2021. ООО «Таргет Консалт Компани»</small>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </div>
+  </body>
+</html>
