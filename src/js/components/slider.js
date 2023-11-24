@@ -1,4 +1,3 @@
-
 $(document).ready(function () {
   $(".promo__slider").slick({
     dots: true,
