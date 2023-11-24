@@ -38,69 +38,82 @@
       <header class="header position-fixed w-100 py-4">
   <div class="container">
     <div class="row">
-      <div class="col-2 position-relative header__box-logo">
-        <div class="text-center">
+      <div class="col-4 col-lg-2 position-relative">
+        <div class="d-flex align-items-center h-100">
           <a href="/" class="d-block mw-100 text-center">
             <img src="/images/icons/logo.svg" alt="logo" class="mw-100" />
           </a>
+
+          <button
+            type="button"
+            class="header__burger burger button w-100 d-lg-none"
+          >
+            <span
+              class="burger__inner position-relative w-100 h-100 d-flex justify-content-center align-items-center"
+            >
+              <span></span>
+            </span>
+          </button>
         </div>
       </div>
-      <div class="col-7">
-        <div class="header__top">
-          <ul
-            class="header__social social d-flex justify-content-end gap-2 mb-0"
-          >
-            <li>
-              <a
-                href="#"
-                class="social__link social__link--fb"
-                title="facebook"
-              ></a>
-            </li>
-            <li>
-              <a
-                href="#"
-                class="social__link social__link--vk"
-                title="В контакте"
-              ></a>
-            </li>
-            <li>
-              <a
-                href="#"
-                class="social__link social__link--ok"
-                title="Одноклассники"
-              ></a>
-            </li>
-          </ul>
-        </div>
-        <div class="header__bottom">
-          <nav class="header-menu d-block">
+      <div class="col-1 col-lg-6 col-xl-7">
+        <div class="header__wrapper flex-column">
+          <div class="header__top">
             <ul
-              class="d-flex h-100 flex-column flex-lg-row justify-content-center justify-content-lg-between text-nowrap ps-0 py-2 fw-500 mb-0"
+              class="header__social social d-flex justify-content-end gap-2 mb-0"
             >
-              <li class="">
-                <a href="#">Услуги</a>
+              <li>
+                <a
+                  href="#"
+                  class="social__link social__link--fb"
+                  title="facebook"
+                ></a>
               </li>
-              <li class="">
-                <a href="#">Преимущества</a>
+              <li>
+                <a
+                  href="#"
+                  class="social__link social__link--vk"
+                  title="В контакте"
+                ></a>
               </li>
-              <li class="">
-                <a href="#">Тарифы</a>
-              </li>
-              <li class="">
-                <a href="#">Наши клиенты</a>
-              </li>
-              <li class="">
-                <a href="#">Блог</a>
-              </li>
-              <li class="">
-                <a href="#">Контакты</a>
+              <li>
+                <a
+                  href="#"
+                  class="social__link social__link--ok"
+                  title="Одноклассники"
+                ></a>
               </li>
             </ul>
-          </nav>
+          </div>
+          <div class="header__bottom">
+            <nav class="header-menu d-block">
+              <ul
+                class="d-flex h-100 flex-column flex-lg-row justify-content-center justify-content-lg-between text-nowrap ps-0 py-2 fw-500 mb-0"
+              >
+                <li class="">
+                  <a href="#">Услуги</a>
+                </li>
+                <li class="">
+                  <a href="#">Преимущества</a>
+                </li>
+                <li class="">
+                  <a href="#">Тарифы</a>
+                </li>
+                <li class="">
+                  <a href="#">Наши клиенты</a>
+                </li>
+                <li class="">
+                  <a href="#">Блог</a>
+                </li>
+                <li class="">
+                  <a href="#">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
         </div>
       </div>
-      <div class="col-3">
+      <div class="col-6 col-lg-4 col-xl-3">
         <div
           class="header__box d-flex flex-column fw-500 align-items-center position-relative text-nowrap"
         >

@@ -2,6 +2,12 @@
   .container {
     max-width: 1250px;
   }
+  .header__wrapper {
+    display: none;
+    @include media(min, lg) {
+      display: flex;
+    }
+  }
   // .header__box-logo
   &__box-logo {
   }
@@ -17,9 +23,9 @@
   // .header__box
   &__box::before {
     content: "";
-    display: block;
-    width: 307px;
-    height: 112px;
+    display: none;
+    width: 106%;
+    height: 187%;
     background: #e2484d;
     clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);
     position: absolute;
@@ -28,6 +34,9 @@
     top: -24px;
     bottom: 0;
     z-index: -1;
+    @include media(min, lg) {
+      display: block;
+    }
   }
   // .header__link
   &__link {
