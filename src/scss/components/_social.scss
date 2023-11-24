@@ -1,0 +1,27 @@
+.social {
+  // .social__link
+  &__link {
+    display: block;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    &--fb {
+      background: url("@img/icons/facebook.svg") no-repeat center / cover;
+    }
+    &--vk {
+      background: url("@img/icons/vk.svg") no-repeat center / cover;
+    }
+    &--ok {
+      background: url("@img/icons/odnoklassniki.svg") no-repeat center / cover;
+    }
+  }
+  // .social__link--fb
+  &__link--fb {
+  }
+  // .social__link--vk
+  &__link--vk {
+  }
+  // .social__link--ok
+  &__link--ok {
+  }
+}

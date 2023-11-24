@@ -42,7 +42,10 @@ $grid_breakpoints: (
     flex: 1 1 auto;
   }
 }
-
+.container {
+  max-width: 1140px;
+}
 @import "base/**.*scss";
 @import "blocks/**.*scss";
 @import "components/**.*scss";
+@import "section/**.*scss";

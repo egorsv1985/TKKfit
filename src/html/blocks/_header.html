@@ -1,4 +1,4 @@
-<header class="header position-fixed w-100">
+<header class="header position-fixed w-100 py-4">
   <div class="container">
     <div class="row">
       <div class="col-2 position-relative header__box-logo">
@@ -10,7 +10,9 @@
       </div>
       <div class="col-7">
         <div class="header__top">
-          <ul class="header__social social d-flex gap-2">
+          <ul
+            class="header__social social d-flex justify-content-end gap-2 mb-0"
+          >
             <li>
               <a
                 href="#"
@@ -37,35 +39,47 @@
         <div class="header__bottom">
           <nav class="header-menu d-block">
             <ul
-              class="d-flex h-100 flex-column flex-lg-row justify-content-center justify-content-lg-between text-nowrap ps-0 py-2"
+              class="d-flex h-100 flex-column flex-lg-row justify-content-center justify-content-lg-between text-nowrap ps-0 py-2 fw-500 mb-0"
             >
-              <li class="py-1 py-lg-0 text-uppercase fw-600 fs-14 ls-9">
+              <li class="">
                 <a href="#">Услуги</a>
+              </li>
+              <li class="">
                 <a href="#">Преимущества</a>
+              </li>
+              <li class="">
                 <a href="#">Тарифы</a>
+              </li>
+              <li class="">
                 <a href="#">Наши клиенты</a>
+              </li>
+              <li class="">
                 <a href="#">Блог</a>
+              </li>
+              <li class="">
                 <a href="#">Контакты</a>
               </li>
             </ul>
           </nav>
         </div>
       </div>
-      <col-3>
-        <div class="header__box d-flex flex-column">
-          <a href="tel:8(499) 404 00 99" class="header__link">
-            +7 (499) 404 00 99
+      <div class="col-3">
+        <div
+          class="header__box d-flex flex-column fw-500 align-items-center position-relative text-nowrap"
+        >
+          <a href="tel:8(499) 404 00 99" class="header__link fs-24 fw-700">
+            8(499) 404 00 99
           </a>
           <a
             data-popup="#callback"
             href="#callback"
             role="button"
-            class="header__link"
+            class="header__link text-decoration-underline"
           >
-            Оставить заявку на продвижение
+            Заказать обратный звонок
           </a>
         </div>
-      </col-3>
+      </div>
     </div>
   </div>
 </header>

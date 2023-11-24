@@ -1,0 +1,90 @@
+.header {
+  .container {
+    max-width: 1250px;
+  }
+  // .header__box-logo
+  &__box-logo {
+  }
+  // .header__top
+  &__top {
+  }
+  // .header__social
+  &__social {
+  }
+  // .header__bottom
+  &__bottom {
+  }
+  // .header__box
+  &__box::before {
+    content: "";
+    display: block;
+    width: 307px;
+    height: 112px;
+    background: #e2484d;
+    clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);
+    position: absolute;
+    left: -16px;
+    right: 0;
+    top: -24px;
+    bottom: 0;
+    z-index: -1;
+  }
+  // .header__link
+  &__link {
+  }
+}
+.position-fixed {
+}
+.w-100 {
+}
+.container {
+}
+.row {
+}
+.col-2 {
+}
+.position-relative {
+}
+.text-center {
+}
+.d-block {
+}
+.mw-100 {
+}
+.col-7 {
+}
+
+.d-flex {
+}
+.gap-2 {
+}
+.header-menu {
+}
+.h-100 {
+}
+.flex-column {
+}
+.flex-lg-row {
+}
+.justify-content-center {
+}
+.justify-content-lg-between {
+}
+.text-nowrap {
+}
+.ps-0 {
+}
+.py-2 {
+}
+.py-1 {
+}
+.py-lg-0 {
+}
+.text-uppercase {
+}
+.fw-600 {
+}
+.fs-14 {
+}
+.ls-9 {
+}

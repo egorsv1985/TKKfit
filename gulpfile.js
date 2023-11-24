@@ -18,6 +18,7 @@ const sourcemaps = require("gulp-sourcemaps");
 const webp = require("gulp-webp");
 const imagemin = require("gulp-imagemin");
 const replace = require("gulp-replace");
+const gulpIf = require("gulp-if");
 
 const paths = {
   src: {
@@ -83,7 +84,7 @@ gulp.task("html", function () {
     .pipe(plumber(plumberNotify("HTML")))
     .pipe(fileInclude(fileIncludeSettings))
     .pipe(webphtml())
-    .pipe(replace(/@img\//g, "images/"))
+    .pipe(replace(/@img\//g, "/images/"))
     .pipe(gulp.dest(paths.dest.dev))
     .pipe(browserSync.stream());
 });
@@ -97,11 +98,12 @@ gulp.task("styles", function () {
     .pipe(sass(sassOptions))
     .pipe(webpCss())
     .pipe(postcss([autoprefixer(), combineMediaQueries()]))
-    .pipe(replace(/@img\//g, "images/"))
+    .pipe(replace(/@img\//g, "../images/"))
     .pipe(sourcemaps.write())
     .pipe(gulp.dest(paths.dest.dev + "css"))
     .pipe(browserSync.stream());
 });
+
 gulp.task("images", function () {
   return gulp
     .src(paths.src.images)
@@ -113,6 +115,7 @@ gulp.task("images", function () {
     .pipe(gulp.dest(paths.dest.dev + "images"))
     .pipe(browserSync.stream());
 });
+
 gulp.task("scripts", function () {
   return gulp
     .src(paths.src.js)
@@ -121,9 +124,11 @@ gulp.task("scripts", function () {
     .pipe(gulp.dest(paths.dest.dev + "js"))
     .pipe(browserSync.stream());
 });
+
 gulp.task("copyFiles", function () {
   return gulp.src(paths.src.files).pipe(gulp.dest(paths.dest.dev));
 });
+
 gulp.task(
   "default",
   gulp.series(
