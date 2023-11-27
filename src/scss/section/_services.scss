@@ -1,0 +1,108 @@
+.services {
+  &::before {
+    content: "";
+    display: block;
+    background: linear-gradient(
+      rgba(63, 109, 155, 0.3),
+      rgba(226, 72, 77, 0.1),
+      rgba(2, 5, 14, 0)
+    );
+    position: absolute;
+    top: 0;
+    left: 21.4%;
+    right: 24.5%;
+    bottom: 0;
+    clip-path: polygon(42% 0%, 100% 0%, 59% 100%, 0% 100%);
+  }
+  // .services__box-img
+  &__box-img {
+  }
+  // .services__img
+  &__img {
+  }
+  // .services__text
+  &__text {
+    bottom: 0;
+    background: linear-gradient(3deg, #02050e 2.42%, rgba(2, 5, 14, 0) 88.41%);
+  }
+  // .services__form
+  &__form {
+  }
+  // .services__title
+  &__title {
+    margin-top: 75px;
+  }
+  // .services__list
+  &__list {
+    max-height: 500px;
+  }
+  // .services__item
+  &__item {
+    &::before {
+      content: "";
+      display: block;
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      background: url("@img/icons/marker.svg") no-repeat center;
+    }
+  }
+  .form {
+    &__button {
+      width: 323px;
+      height: 72px;
+    }
+  }
+}
+.py-5 {
+}
+.container {
+}
+.row {
+}
+.col-4 {
+}
+.position-relative {
+}
+.position-absolute {
+}
+.fs-20 {
+}
+.text-center {
+}
+.form {
+  // .form__input
+  &__input {
+  }
+  // .form__button
+  &__button {
+  }
+}
+.form-group {
+}
+.form-control {
+}
+.button {
+}
+.fs-24 {
+}
+.text-start {
+}
+.col-7 {
+}
+.offset-1 {
+}
+.fs-36 {
+}
+.fw-700 {
+}
+.text-uppercase {
+}
+.d-flex {
+}
+.flex-wrap {
+}
+.fs-22 {
+}

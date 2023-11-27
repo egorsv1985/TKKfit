@@ -24,6 +24,7 @@
 
   <!-- <meta name="robots" content="noindex, nofollow"> -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.5/jquery.inputmask.min.js"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
@@ -253,7 +254,7 @@
         data-popup="#callback"
         href="#callback"
         role="button"
-        class="promo__link fs-24 lh-normal position-relative"
+        class="promo__button button fs-24 lh-normal position-relative"
       >
         Оставить заявку<br />
         на продвижение
@@ -270,61 +271,95 @@
   </div>
 </section>
 
-        <section class="services d-none" id="services">
+        <section class="services py-5 position-relative" id="services">
   <div class="container">
-    <div class="row">
-      <div class="col-4">
+    <div class="row pb-5">
+      <div class="col-12 col-lg-4">
         <div class="services__box-img position-relative">
           <picture><source srcset="/images/forma.webp" type="image/webp"><img src="/images/forma.png" alt="forma" class="services__img" /></picture>
-          <p class="services__text position-absolute">
-            Мы поможем вам в продвижении вашего бизнеса
-          </p>
+          <div
+            class="services__text pt-5 pb-4 px-4 position-absolute fs-20 text-center w-100"
+          >
+            Мы поможем вам в<br />
+            продвижении вашего бизнеса
+          </div>
         </div>
         <form action="#" class="services__form form">
-          <div class="form-group position-relative">
+          <div class="form-group mb-5 position-relative">
             <input
-              type="text"
-              class="form-control form__input"
+              type="tel"
+              class="form-control form__input py-4 ps-3"
               name="tel"
               id="tel"
-              placeholder=""
+              placeholder="+7 (___) ___-__-__"
               required
             />
-            <label
-              for="tel"
-              class="form-label form__label fs-16 text-info position-absolute top-50 mb-0"
-              >+7(___) ___-__-__*</label
-            >
           </div>
           <button
             type="submit"
-            class="form__btn btn fs-16 fw-600 px-3 py-3 btn-primary w-100 border-0 mb-4"
+            class="form__button button fs-24 ps-2 position-relative text-start"
           >
-            Оставить заявку на продвижение
+            Оставить заявку<br />
+            на продвижение
           </button>
         </form>
       </div>
-      <div class="col-7 offset-1">
-        <h2 class="services__title">Услуги для фитнес клуба</h2>
-        <ul class="services__list d-flex flex-wrap">
-          <li class="services__item">Разработка сайта</li>
-          <li class="services__item">Контекстная реклама</li>
-          <li class="services__item">SMM-продвижение</li>
-          <li class="services__item">Редизайн и ребрендинг</li>
-          <li class="services__item">Медийная и видеореклама</li>
-          <li class="services__item">Подключение коллтрекинга</li>
-          <li class="services__item">Настройка сквозной аналитики</li>
-          <li class="services__item">SEO-продвижение</li>
-          <li class="services__item">Таргетированная реклама</li>
-          <li class="services__item">Разработка брендбука</li>
-          <li class="services__item">
-            Реклама в мессенджерах (Viber, Telegram и др)
+      <div class="col-12 col-lg-7 offset-lg-1">
+        <div class="services__title fs-36 fw-700 text-uppercase mb-5">
+          Услуги для фитнес клуба
+        </div>
+        <ul class="services__list d-flex flex-md-wrap flex-column gap-4">
+          <li class="services__item fs-22 lh-normal ps-5 position-relative">
+            Разработка сайта
           </li>
-          <li class="services__item">
-            SMS-рассылки для фитнес-клуба по базе МТС
+          <li class="services__item fs-22 lh-normal ps-5 position-relative">
+            Контекстная<br />
+            реклама
           </li>
-          <li class="services__item">
-            Реклама в геосервисах Яндекса (Справочник, Навигатор)
+          <li class="services__item fs-22 lh-normal ps-5 position-relative">
+            SMM-продвижение
+          </li>
+          <li class="services__item fs-22 lh-normal ps-5 position-relative">
+            Редизайн и<br />
+            ребрендинг
+          </li>
+          <li class="services__item fs-22 lh-normal ps-5 position-relative">
+            Медийная и<br />
+            видеореклама
+          </li>
+          <li class="services__item fs-22 lh-normal ps-5 position-relative">
+            Подключение<br />
+            коллтрекинга
+          </li>
+          <li class="services__item fs-22 lh-normal ps-5 position-relative">
+            Настройка<br />
+            сквозной аналитики
+          </li>
+          <li class="services__item fs-22 lh-normal ps-5 position-relative">
+            SEO-продвижение
+          </li>
+          <li class="services__item fs-22 lh-normal ps-5 position-relative">
+            Таргетированная<br />
+            реклама
+          </li>
+
+          <li class="services__item fs-22 lh-normal ps-5 position-relative">
+            Разработка брендбука
+          </li>
+          <li class="services__item fs-22 lh-normal ps-5 position-relative">
+            Реклама в<br />
+            мессенджерах<br />
+            (Viber, Telegram и др)
+          </li>
+          <li class="services__item fs-22 lh-normal ps-5 position-relative">
+            SMS-рассылки<br />
+            для фитнес-клуба<br />
+            по базе МТС
+          </li>
+          <li class="services__item fs-22 lh-normal ps-5 position-relative">
+            Реклама в геосервисах<br />
+            Яндекса (Справочник,<br />
+            Навигатор)
           </li>
         </ul>
       </div>

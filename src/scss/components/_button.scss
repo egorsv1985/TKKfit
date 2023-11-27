@@ -1,0 +1,33 @@
+.button {
+  z-index: 2;
+  &::before {
+    content: "";
+    display: block;
+    background-color: #e2484d;
+    border-radius: 5px;
+    width: 67px;
+    height: 72px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 0.5s ease-in-out;
+  }
+  &::after {
+    content: "";
+    display: block;
+    background: url("@img/icons/arrow.svg") no-repeat center;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 67px;
+    height: 72px;
+  }
+  &:hover {
+    &::before {
+      width: 100%;
+      z-index: -1;
+    }
+  }
+}
