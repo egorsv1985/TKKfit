@@ -1,0 +1,72 @@
+.promo {
+  background: url("@img/promo-bg.png") no-repeat center / cover;
+  // .promo__slider
+  &__slider {
+  }
+  // .promo__content
+  &__content {
+    bottom: 8.5%;
+    left: 10.5%;
+  }
+  // .promo__link
+  &__link {
+    padding-left: 20px;
+    max-width: 310px;
+    margin-bottom: 200px;
+    z-index: 2;
+    &::before {
+      content: "";
+      display: block;
+      background-color: #e2484d;
+      border-radius: 5px;
+      width: 67px;
+      height: 72px;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      transition: all 0.5s ease-in-out;
+    }
+    &::after {
+      content: "";
+      display: block;
+      background: url("@img/icons/arrow.svg") no-repeat center;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 67px;
+      height: 72px;
+    }
+    &:hover {
+      &::before {
+        width: 100%;
+        z-index: -1;
+      }
+    }
+  }
+
+  // .promo__arrow
+  &__arrow {
+    display: inline-block;
+    width: 67px;
+    height: 72px;
+    border-radius: 5px;
+
+    background: #e2484d url("@img/icons/arrow.svg") no-repeat center;
+  }
+  // .promo__box
+  &__box {
+  }
+  // .promo__box-logo
+  &__box-logo {
+    width: 112px;
+    height: 68px;
+  }
+  // .promo__subtitle
+  &__subtitle {
+    background-color: #3f6d9b;
+    max-width: 322px;
+    clip-path: polygon(0% 0%, 100% 0%, 88% 100%, 0% 100%);
+  }
+}

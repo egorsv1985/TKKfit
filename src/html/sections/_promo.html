@@ -1,47 +1,111 @@
 <section class="promo" id="promo">
-  <div class="container">
+  <div class="slider__box position-relative">
+    <div class="slider__controls d-flex gap-4">
+      <button
+        class="slider__prev slider__arrow"
+        aria-label="Previous"
+        type="button"
+      ></button>
+      <button
+        class="slider__next slider__arrow"
+        aria-label="Next"
+        type="button"
+      ></button>
+    </div>
     <div class="promo__slider slider">
       <div class="slider__item">
-        <span class="slider__counter">1</span>
-        <h1 class="slider__title fs-42 fw-700">
-          Увеличьте количество новых клиентов
-        </h1>
-        <div class="slider__box__img">
-          <img src="@img/woman.png" alt="promo 1" class="slider__img" />
+        <div class="container">
+          <span class="slider__counter fw-900">1</span>
+          <div class="row">
+            <div class="col-5">
+              <div
+                class="slider__title fs-42 fw-700 text-uppercase lh-normal h1"
+              >
+                Увеличьте количество новых клиентов
+              </div>
+            </div>
+            <div class="col-7">
+              <div class="slider__box-img position-relative">
+                <img src="@img/woman.png" alt="promo 1" class="slider__img" />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="slider__item">
-        <span class="slider__counter">2</span>
-        <h1 class="slider__title fs-42 fw-700">
-          Достигните новых высот вместе с нами
-        </h1>
-        <div class="slider__box__img">
-          <img src="@img/promo2.png" alt="promo 2" class="slider__img" />
+        <div class="container">
+          <span class="slider__counter fw-900">2</span>
+          <div class="row">
+            <div class="col-5">
+              <div
+                class="slider__title h1 fs-42 fw-700 text-uppercase lh-normal"
+              >
+                Достигните новых высот вместе с нами
+              </div>
+            </div>
+            <div class="col-7">
+              <div class="slider__box-img position-relative">
+                <img src="@img/woman.png" alt="promo 1" class="slider__img" />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="slider__item">
-        <span class="slider__counter">3</span>
-        <h1 class="slider__title fs-42 fw-700">
-          Покажите свой стиль с нашими продуктами
-        </h1>
-        <div class="slider__box__img">
-          <img src="@img/promo3.png" alt="promo 3" class="slider__img" />
+        <div class="container">
+          <span class="slider__counter fw-900">3</span>
+          <div class="row">
+            <div class="col-5">
+              <div
+                class="slider__title h1 fs-42 fw-700 text-uppercase lh-normal"
+              >
+                Покажите свой стиль с нашими продуктами
+              </div>
+            </div>
+            <div class="col-7">
+              <div class="slider__box-img position-relative">
+                <img src="@img/woman.png" alt="promo 1" class="slider__img" />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="slider__item">
-        <span class="slider__counter">4</span>
-        <h1 class="slider__title fs-42 fw-700">
-          Откройте для себя удивительные возможности
-        </h1>
-        <div class="slider__box__img">
-          <img src="@img/promo4.png" alt="promo 4" class="slider__img" />
+        <div class="container">
+          <span class="slider__counter fw-900">4</span>
+          <div class="row">
+            <div class="col-5">
+              <div
+                class="slider__title h1 fs-42 fw-700 text-uppercase lh-normal"
+              >
+                Откройте для себя удивительные возможности
+              </div>
+            </div>
+            <div class="col-7">
+              <div class="slider__box-img position-relative">
+                <img src="@img/woman.png" alt="promo 1" class="slider__img" />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="slider__item">
-        <span class="slider__counter">5</span>
-        <h1 class="slider__title fs-42 fw-700">Путешествуйте вместе с нами</h1>
-        <div class="slider__box__img">
-          <img src="@img/promo5.png" alt="promo 5" class="slider__img" />
+        <div class="container">
+          <span class="slider__counter fw-900">5</span>
+          <div class="row">
+            <div class="col-5">
+              <div
+                class="slider__title h1 fs-42 fw-700 text-uppercase lh-normal"
+              >
+                Увеличьте количество новых клиентов
+              </div>
+            </div>
+            <div class="col-7">
+              <div class="slider__box-img position-relative">
+                <img src="@img/woman.png" alt="promo 1" class="slider__img" />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -51,17 +115,18 @@
         data-popup="#callback"
         href="#callback"
         role="button"
-        class="promo__link"
+        class="promo__link fs-24 lh-normal position-relative"
       >
-        Оставить заявку на продвижение <span class="promo__span"></span>
+        Оставить заявку<br />
+        на продвижение
       </a>
-      <div class="promo__box d-flex gap-4">
+      <div class="promo__box d-flex align-items-center gap-4">
         <div class="promo__box-logo">
-          <img src="@img/icons/logo.svg" alt="logo" class="mw-100" />
+          <img src="@img/icons/promo-logo.svg" alt="logo" class="mw-100" />
         </div>
-        <h2 class="promo__subtitle">
+        <div class="promo__subtitle fs-18 fw-500 lh-125 py-3 px-4">
           ТКК Fitness - комплекстное PROдвижение вашего фитнес-клуба.
-        </h2>
+        </div>
       </div>
     </div>
   </div>
