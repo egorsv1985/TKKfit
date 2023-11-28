@@ -1,0 +1,85 @@
+.results {
+  // .results__title
+  &__title {
+    color: #02050e;
+  }
+  // .results__slider
+  &__slider {
+  }
+}
+.position-relative {
+}
+.container {
+}
+.fs-36 {
+}
+.fw-700 {
+}
+.text-uppercase {
+}
+.slider {
+  // .slider__controls
+  &__controls {
+  }
+  // .slider__prev
+  &__prev {
+  }
+  // .slider__arrow
+  &__arrow {
+  }
+  // .slider__next
+  &__next {
+  }
+  // .slider__item
+  &__item {
+  }
+  // .slider__box-img
+  &__box-img {
+  }
+  // .slider__img
+  &__img {
+  }
+  // .slider__region
+  &__region {
+    color: #000;
+    background: url("@img/icons/map.svg") no-repeat left center;
+  }
+  // .slider__city
+  &__city {
+    color: #fff;
+
+    line-height: 120%;
+    border-radius: 5px;
+    background-color: #2f3a5a;
+  }
+  // .slider__num
+  &__num {
+    color: #3f6d9b;
+  }
+  // .slider__text
+  &__text {
+    color: #000;
+  }
+}
+.d-flex {
+}
+.gap-4 {
+}
+.row {
+}
+.col-6 {
+}
+.fs-16 {
+}
+.lh-normal {
+}
+.ps-4 {
+}
+.py-1 {
+}
+.px-2 {
+}
+.fs-30 {
+}
+.fw-900 {
+}
