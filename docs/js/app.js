@@ -1,10 +1,31 @@
 
 $(document).ready(function () {
+  $(".burger").click(function () {
+    $("html").toggleClass("open");
+    return false;
+  });
+});
+
+$(document).ready(function () {
   var e = document.querySelectorAll('input[type="tel"]');
   jQuery(e).inputmask({
     mask: ["+7 (999) 999 99 99", "8 (999) 999 99 99"],
     greedy: !1,
     placeholder: "_",
+  });
+});
+
+$(document).ready(function () {
+  $(window).scroll(function (event) {
+    body = $("body").scrollTop();
+    if (body == 0) {
+      body = $("html").scrollTop();
+    }
+    if (body > 0) {
+      $("header").addClass("fixed");
+    } else {
+      $("header").removeClass("fixed");
+    }
   });
 });
 

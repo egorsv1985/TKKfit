@@ -1,4 +1,8 @@
 .header {
+  &.fixed {
+    position: fixed;
+    z-index: 9999;
+  }
   .container {
     max-width: 1250px;
   }
