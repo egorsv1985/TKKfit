@@ -34,39 +34,41 @@ $(document).ready(function () {
     dots: true,
     infinite: true,
     speed: 500,
-    fade: true,
-    cssEase: "linear",
+
     autoplay: false,
     autoplaySpeed: 5000,
     swipe: true,
-    arrows: false,
-  });
-  // Добавляем обработчики событий для кастомных кнопок
-  $(".slider__prev").on("click", function () {
-    $(".promo__slider").slick("slickPrev");
+    arrows: true,
+
+    appendArrows: $(".slider__controls"),
   });
 
-  $(".slider__next").on("click", function () {
-    $(".promo__slider").slick("slickNext");
-  });
   $(".results__slider").slick({
     infinite: true,
     speed: 500,
-    fade: true,
-    cssEase: "linear",
+
     autoplay: false,
     autoplaySpeed: 5000,
     swipe: true,
-    arrows: false,
+    arrows: true,
+
     slidesToShow: 3,
     slidesToScroll: 3,
-  });
-  // Добавляем обработчики событий для кастомных кнопок
-  $(".slider__prev").on("click", function () {
-    $(".results__slider").slick("slickPrev");
-  });
-
-  $(".slider__next").on("click", function () {
-    $(".results__slider").slick("slickNext");
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   });
 });
