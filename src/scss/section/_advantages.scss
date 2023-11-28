@@ -1,6 +1,10 @@
 .advantages {
-  background: linear-gradient(rgba(63, 109, 155, 1), rgba(226, 72, 77, 0));
-
+  position: relative;
+  background: linear-gradient(rgba(63, 109, 155, 1), rgba(226, 72, 77, 0.3));
+  padding-top: 20px;
+  .advantages__content {
+    margin-top: -30px;
+  }
   // .advantages__title
   &__title {
     color: #02050e;
@@ -9,13 +13,28 @@
   &__text {
     color: #000;
   }
+  .advantages__lists {
+    gap: 30px;
+  }
   // .advantages__list
   &__list {
+    gap: 45px;
+
+    &--left {
+      margin-top: -75px;
+    }
+    &--right {
+      position: relative;
+      z-index: 1;
+      bottom: -55px;
+    }
   }
+
   // .advantages__item
   &__item {
     border-radius: 5px;
     background: #fff;
+    padding: 40px;
     width: 360px;
     height: 260px;
     box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.2);
