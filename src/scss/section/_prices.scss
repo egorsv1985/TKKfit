@@ -1,0 +1,131 @@
+.prices {
+  padding-top: 85px;
+  background-color: #fff;
+  // .prices__title
+  &__title {
+    color: #02050e;
+    margin-bottom: 80px;
+  }
+
+  table {
+    overflow-x: scroll;
+    td {
+      border-bottom-style: dashed;
+    }
+
+    thead tr th {
+      padding-block: 16px;
+      text-align: center;
+      border: none;
+
+      font-size: 18px;
+
+      font-weight: 400;
+      line-height: 18px;
+      b {
+        font-weight: 700;
+      }
+    }
+    .cost {
+      border-spacing: 5px;
+    }
+    tr:first-child td {
+      border: none;
+    }
+    tr td:not(.name) {
+      text-align: center;
+    }
+    tr td.name {
+      background-color: rgba(63, 109, 155, 0.1);
+
+      font-family: Nunito;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 18px;
+    }
+    tr:not(:first-child) td {
+      vertical-align: bottom;
+    }
+    tr.cost td:not(:first-child) .table__item,
+    tr.order td:not(:first-child) .table__item {
+      color: #fff;
+
+      font-family: Nunito;
+
+      font-weight: 700;
+      font-size: 18px;
+
+      line-height: 18px;
+      border-radius: 5px;
+      padding: 15px 25px;
+      text-wrap: nowrap;
+    }
+    tr.cost td:not(:first-child),
+    tr.order td:not(:first-child) {
+      padding-inline: 3px;
+    }
+    tr.cost td:nth-child(2) .table__item,
+    tr.order td:nth-child(2) .table__item {
+      background-color: #78cde0;
+    }
+    tr.cost td:nth-child(3) .table__item,
+    tr.order td:nth-child(3) .table__item {
+      background-color: #638fb1;
+    }
+    tr.cost td:nth-child(4) .table__item,
+    tr.order td:nth-child(4) .table__item {
+      background-color: #406e9c;
+    }
+    tr.cost td:nth-child(5) .table__item,
+    tr.order td:nth-child(5) .table__item {
+      background-color: #2f3a5a;
+    }
+    tr.cost td:nth-child(6) .table__item,
+    tr.order td:nth-child(6) .table__item {
+      background-color: #e2484d;
+    }
+    tr:nth-child(3) td:first-child {
+      border-top-right-radius: 5px;
+      border-top-left-radius: 5px;
+      padding-top: 20px;
+    }
+    tr.budget td:not(:first-child),
+    tr.letters td:not(:first-child),
+    tr.publicity td:not(:first-child) {
+      font-family: Roboto;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 18px;
+      vertical-align: middle;
+    }
+    tr.publicity td,
+    tr.order td {
+      border: none;
+    }
+    tr.publicity td:first-child {
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      padding-bottom: 30px;
+    }
+    tr.empty td {
+      padding-block: 20px;
+      border: none;
+    }
+  }
+}
+.container {
+}
+.fs-36 {
+}
+.fw-700 {
+}
+.lh-normal {
+}
+.text-center {
+}
+.text-uppercase {
+}
+.table-responsive {
+}
+.table {
+}

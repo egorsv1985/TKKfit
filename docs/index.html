@@ -10,6 +10,10 @@
     href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700;900&display=swap"
     rel="stylesheet"
   />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap"
+    rel="stylesheet"
+  />
   <link rel="shortcut icon" href="favicon.ico" />
 
   <link
@@ -466,10 +470,14 @@
   </div>
 </section>
 
-        <section class="prices d-none" id="prices">
+        <section class="prices" id="prices">
   <div class="container">
-    <h2 class="prices__title">Сколько стоит продвижение фитнес-клуба</h2>
-    <table class="prices__table"></table>
+    <div
+      class="prices__title fs-36 fw-700 lh-normal text-center text-uppercase"
+    >
+      Сколько стоит продвижение фитнес-клуба
+    </div>
+
     <div class="prices__table table-responsive">
       <table class="table">
         <thead>
@@ -483,16 +491,28 @@
           </tr>
         </thead>
         <tbody>
-          <tr class="">
+          <tr class="cost">
             <td></td>
-            <td>50 000 ₽/мес</td>
-            <td>70 000 ₽/мес</td>
-            <td>100 000 ₽/мес</td>
-            <td>150 000 ₽/мес</td>
-            <td>Custom</td>
+            <td><div class="table__item">50 000 ₽/мес</div></td>
+            <td><div class="table__item">70 000 ₽/мес</div></td>
+            <td><div class="table__item">100 000 ₽/мес</div></td>
+            <td><div class="table__item">150 000 ₽/мес</div></td>
+            <td>
+              <div class="table__item">Custom</div>
+            </td>
+          </tr>
+          <tr class="empty">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
           </tr>
           <tr class="">
-            <td>Разработка лендинга для рекламы</td>
+            <td class="name">
+              Разработка лендинга<br />
+              для рекламы
+            </td>
             <td><img src="/images/icons/remove.svg" alt="remove" /></td>
             <td><img src="/images/icons/check.svg" alt="check" /></td>
             <td><img src="/images/icons/check.svg" alt="check" /></td>
@@ -500,39 +520,7 @@
             <td><img src="/images/icons/check.svg" alt="check" /></td>
           </tr>
           <tr class="">
-            <td>Разработка сайта для SEO</td>
-            <td><img src="/images/icons/remove.svg" alt="remove" /></td>
-            <td><img src="/images/icons/remove.svg" alt="remove" /></td>
-            <td><img src="/images/icons/remove.svg" alt="remove" /></td>
-            <td><img src="/images/icons/check.svg" alt="check" /></td>
-            <td><img src="/images/icons/check.svg" alt="check" /></td>
-          </tr>
-          <tr class="">
-            <td>SEO-продвижение</td>
-            <td><img src="/images/icons/remove.svg" alt="remove" /></td>
-            <td><img src="/images/icons/remove.svg" alt="remove" /></td>
-            <td><img src="/images/icons/check.svg" alt="check" /></td>
-            <td><img src="/images/icons/check.svg" alt="check" /></td>
-            <td><img src="/images/icons/check.svg" alt="check" /></td>
-          </tr>
-          <tr class="">
-            <td>Контекстная реклама</td>
-            <td><img src="/images/icons/check.svg" alt="check" /></td>
-            <td><img src="/images/icons/check.svg" alt="check" /></td>
-            <td><img src="/images/icons/check.svg" alt="check" /></td>
-            <td><img src="/images/icons/check.svg" alt="check" /></td>
-            <td><img src="/images/icons/check.svg" alt="check" /></td>
-          </tr>
-          <tr class="">
-            <td>Таргетированная реклама</td>
-            <td><img src="/images/icons/check.svg" alt="check" /></td>
-            <td><img src="/images/icons/check.svg" alt="check" /></td>
-            <td><img src="/images/icons/check.svg" alt="check" /></td>
-            <td><img src="/images/icons/check.svg" alt="check" /></td>
-            <td><img src="/images/icons/check.svg" alt="check" /></td>
-          </tr>
-          <tr class="">
-            <td>SMM-продвижение</td>
+            <td class="name">Разработка сайта для SEO</td>
             <td><img src="/images/icons/remove.svg" alt="remove" /></td>
             <td><img src="/images/icons/remove.svg" alt="remove" /></td>
             <td><img src="/images/icons/remove.svg" alt="remove" /></td>
@@ -540,7 +528,39 @@
             <td><img src="/images/icons/check.svg" alt="check" /></td>
           </tr>
           <tr class="">
-            <td>Разработка брендбука</td>
+            <td class="name">SEO-продвижение</td>
+            <td><img src="/images/icons/remove.svg" alt="remove" /></td>
+            <td><img src="/images/icons/remove.svg" alt="remove" /></td>
+            <td><img src="/images/icons/check.svg" alt="check" /></td>
+            <td><img src="/images/icons/check.svg" alt="check" /></td>
+            <td><img src="/images/icons/check.svg" alt="check" /></td>
+          </tr>
+          <tr class="">
+            <td class="name">Контекстная реклама</td>
+            <td><img src="/images/icons/check.svg" alt="check" /></td>
+            <td><img src="/images/icons/check.svg" alt="check" /></td>
+            <td><img src="/images/icons/check.svg" alt="check" /></td>
+            <td><img src="/images/icons/check.svg" alt="check" /></td>
+            <td><img src="/images/icons/check.svg" alt="check" /></td>
+          </tr>
+          <tr class="">
+            <td class="name">Таргетированная реклама</td>
+            <td><img src="/images/icons/check.svg" alt="check" /></td>
+            <td><img src="/images/icons/check.svg" alt="check" /></td>
+            <td><img src="/images/icons/check.svg" alt="check" /></td>
+            <td><img src="/images/icons/check.svg" alt="check" /></td>
+            <td><img src="/images/icons/check.svg" alt="check" /></td>
+          </tr>
+          <tr class="">
+            <td class="name">SMM-продвижение</td>
+            <td><img src="/images/icons/remove.svg" alt="remove" /></td>
+            <td><img src="/images/icons/remove.svg" alt="remove" /></td>
+            <td><img src="/images/icons/remove.svg" alt="remove" /></td>
+            <td><img src="/images/icons/check.svg" alt="check" /></td>
+            <td><img src="/images/icons/check.svg" alt="check" /></td>
+          </tr>
+          <tr class="">
+            <td class="name">Разработка брендбука</td>
             <td><img src="/images/icons/remove.svg" alt="remove" /></td>
             <td><img src="/images/icons/remove.svg" alt="remove" /></td>
             <td><img src="/images/icons/remove.svg" alt="remove" /></td>
@@ -548,44 +568,67 @@
             <td><img src="/images/icons/check.svg" alt="check" /></td>
           </tr>
           <tr class="">
-            <td>Редизайн и ребрендинг</td>
+            <td class="name">Редизайн и ребрендинг</td>
             <td><img src="/images/icons/remove.svg" alt="remove" /></td>
             <td><img src="/images/icons/remove.svg" alt="remove" /></td>
             <td><img src="/images/icons/remove.svg" alt="remove" /></td>
             <td><img src="/images/icons/check.svg" alt="check" /></td>
             <td><img src="/images/icons/check.svg" alt="check" /></td>
           </tr>
-          <tr class="">
-            <td>Рекомендуемый бюджет в месяц на продвижение</td>
+          <tr class="budget">
+            <td class="name">
+              Рекомендуемый бюджет в месяц<br />
+              на продвижение
+            </td>
             <td>от 10 000 ₽</td>
             <td>от 20 000 ₽</td>
             <td>от 30 000 ₽</td>
             <td>от 50 000 ₽</td>
             <td>Custom</td>
           </tr>
-          <tr class="">
-            <td>SMS-рассылки для фитнес-клуба по базе МТС</td>
+          <tr class="letters">
+            <td class="name">
+              SMS-рассылки для<br />
+              фитнес-клуба по базе МТС
+            </td>
             <td>от 70 000 ₽</td>
             <td>от 100 000 ₽</td>
             <td>от 200 000 ₽</td>
             <td>от 500 000 ₽</td>
             <td>Custom</td>
           </tr>
-          <tr class="">
-            <td>Медийная и видеореклама</td>
+          <tr class="publicity">
+            <td class="name">Медийная и видеореклама</td>
             <td>от 50 000 ₽</td>
             <td>от 70 000 ₽</td>
             <td>от 100 000 ₽</td>
             <td>от 150 000 ₽</td>
             <td>Custom</td>
           </tr>
-          <tr class="">
+          <tr class="empty">
             <td></td>
-            <td>Заказать</td>
-            <td>Заказать</td>
-            <td>Заказать</td>
-            <td>Заказать</td>
-            <td>Заказать</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr class="order">
+            <td class=""></td>
+            <td>
+              <div class="table__item">Заказать</div>
+            </td>
+            <td>
+              <div class="table__item">Заказать</div>
+            </td>
+            <td>
+              <div class="table__item">Заказать</div>
+            </td>
+            <td>
+              <div class="table__item">Заказать</div>
+            </td>
+            <td>
+              <div class="table__item">Заказать</div>
+            </td>
           </tr>
         </tbody>
       </table>
