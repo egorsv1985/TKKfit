@@ -1,0 +1,30 @@
+.open {
+  .header__wrapper {
+    display: flex;
+    position: absolute;
+    background-color: #02050e;
+    left: 0;
+    top: 0;
+    height: 100dvh;
+    width: 100dvw;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 5;
+    padding-top: 45px;
+  }
+  .header__bottom,
+  .header__top {
+    width: 100%;
+  }
+  .header__social {
+    justify-content: center;
+  }
+  .header__menu ul {
+    align-items: center;
+  }
+  .burger {
+    position: absolute;
+    top: 2%;
+    left: -60%;
+  }
+}

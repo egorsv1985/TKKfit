@@ -1,13 +1,16 @@
-<header class="header w-100 py-4 bg-dark">
+<header class="header w-100 bg-dark">
   <div class="container">
     <div class="row">
-      <div class="col-4 col-lg-2 position-relative">
-        <div class="d-flex align-items-center h-100">
+      <div class="col-2 col-sm-5 col-lg-2 position-relative">
+        <div class="d-flex align-items-center h-100 justify-content-lg-center">
           <a href="/" class="d-block mw-100 text-center">
             <img src="@img/icons/logo.svg" alt="logo" class="mw-100" />
           </a>
-
-          <button type="button" class="header__burger burger w-100 d-lg-none">
+        </div>
+      </div>
+      <div class="col-2 col-lg-6 col-xl-7">
+        <div class="d-flex d-lg-none h-100 align-items-center">
+          <button type="button" class="header__burger burger w-100">
             <span
               class="burger__inner position-relative w-100 h-100 d-flex justify-content-center align-items-center"
             >
@@ -15,12 +18,10 @@
             </span>
           </button>
         </div>
-      </div>
-      <div class="col-1 col-lg-6 col-xl-7">
-        <div class="header__wrapper menu flex-column">
+        <div class="header__wrapper flex-column-reverse flex-lg-column">
           <div class="header__top">
             <ul
-              class="header__social social d-flex justify-content-end gap-2 mb-0"
+              class="header__social social d-flex justify-content-lg-end gap-2 mb-0 ps-0"
             >
               <li>
                 <a
@@ -46,9 +47,9 @@
             </ul>
           </div>
           <div class="header__bottom">
-            <nav class="header-menu d-block">
+            <nav class="header__menu d-block">
               <ul
-                class="d-flex h-100 flex-column flex-lg-row justify-content-center justify-content-lg-between text-nowrap ps-0 py-2 fw-500 mb-0"
+                class="d-flex h-100 flex-column flex-lg-row justify-content-center justify-content-lg-between text-nowrap gap-2 ps-0 py-2 fw-500 mb-0"
               >
                 <li class="">
                   <a href="#">Услуги</a>
@@ -73,9 +74,9 @@
           </div>
         </div>
       </div>
-      <div class="col-6 col-lg-4 col-xl-3">
+      <div class="col-8 col-sm-5 col-lg-4 col-xl-3">
         <div
-          class="header__box d-flex flex-column fw-500 align-items-center position-relative text-nowrap"
+          class="header__box d-flex flex-column fw-500 align-items-end align-items-lg-center position-relative text-nowrap"
         >
           <a href="tel:8(499) 404 00 99" class="header__link fs-24 fw-700">
             8(499) 404 00 99
@@ -84,7 +85,7 @@
             data-popup="#callback"
             href="#callback"
             role="button"
-            class="header__link text-decoration-underline"
+            class="header__link"
           >
             Заказать обратный звонок
           </a>

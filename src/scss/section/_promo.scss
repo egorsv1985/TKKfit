@@ -1,5 +1,6 @@
 .promo {
-  background: url("@img/promo-bg.png") no-repeat center / cover;
+  background: linear-gradient(180deg, #02050e 8.28%, rgba(2, 5, 14, 0.65) 100%)
+    url("@img/promo-bg.png") no-repeat center / cover;
   // .promo__slider
   &__slider {
   }

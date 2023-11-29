@@ -1,4 +1,5 @@
 .header {
+  padding-block: 20px;
   &.fixed {
     position: fixed;
     z-index: 9999;
@@ -6,10 +7,16 @@
   .container {
     max-width: 1250px;
   }
-  .header__wrapper {
+  &__wrapper {
+    gap: 10px;
     display: none;
+    left: -100%;
+    position: absolute;
+    transition: all 0.5s ease-in-out;
     @include media(min, lg) {
       display: flex;
+      left: inherit;
+      position: relative;
     }
   }
   // .header__box-logo
@@ -25,25 +32,72 @@
   &__bottom {
   }
   // .header__box
-  &__box::before {
-    content: "";
-    display: none;
-    width: 106%;
-    height: 187%;
-    background: #e2484d;
-    clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);
-    position: absolute;
-    left: -16px;
-    right: 0;
-    top: -24px;
-    bottom: 0;
-    z-index: -1;
-    @include media(min, lg) {
-      display: block;
+
+  &__box {
+    gap: 12px;
+    height: 100%;
+    justify-content: center;
+    @include media(min, sm) {
+      height: inherit;
+      justify-content: inherit;
+    }
+    &::before {
+      content: "";
+      display: none;
+      width: 106%;
+      height: 190%;
+      background-color: #e2484d;
+      clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);
+      position: absolute;
+      left: -16px;
+      right: 0;
+      top: -24px;
+      bottom: 0;
+
+      @include media(min, lg) {
+        display: block;
+      }
     }
   }
-  // .header__link
+
+  &__menu ul li a,
   &__link {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      border-radius: 4px;
+      bottom: -2px;
+      background-color: #e2484d;
+
+      left: 0;
+      transform-origin: right;
+      transform: scaleX(0);
+      transition: transform 0.3s ease-in-out;
+    }
+    &:hover::before {
+      transform-origin: left;
+      transform: scaleX(1);
+    }
+  }
+  &__link {
+    position: relative;
+    z-index: 1;
+    &:hover {
+      color: #e2484d;
+      @include media(min, lg) {
+        color: #02050e;
+      }
+      &::before {
+        background-color: #e2484d;
+        @include media(min, lg) {
+          background-color: #02050e;
+        }
+      }
+    }
   }
 }
 .position-fixed {
