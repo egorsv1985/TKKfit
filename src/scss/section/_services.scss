@@ -34,7 +34,9 @@
   }
   // .services__list
   &__list {
-    max-height: 500px;
+    @include media(min, md) {
+      max-height: 500px;
+    }
   }
   // .services__item
   &__item {

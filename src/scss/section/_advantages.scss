@@ -1,9 +1,11 @@
 .advantages {
   position: relative;
   background: linear-gradient(rgba(63, 109, 155, 0.5), rgba(226, 72, 77, 0));
-  padding-top: 20px;
-  .advantages__content {
-    margin-top: -30px;
+
+  &__content {
+    @include media(min, lg) {
+      margin-top: -30px;
+    }
   }
   // .advantages__title
   &__title {
@@ -21,12 +23,15 @@
     gap: 45px;
 
     &--left {
-      margin-top: -75px;
+      @include media(min, lg) {
+        margin-top: -75px;
+      }
     }
     &--right {
-      position: relative;
       z-index: 1;
-      bottom: -55px;
+      @include media(min, lg) {
+        bottom: -55px;
+      }
     }
   }
 
@@ -35,8 +40,10 @@
     border-radius: 5px;
     background: #fff;
     padding: 40px;
-    width: 360px;
-    height: 260px;
+    max-width: 360px;
+    width: 100%;
+    height: max-content;
+    min-height: 260px;
     box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.2);
   }
   &__item-text {
