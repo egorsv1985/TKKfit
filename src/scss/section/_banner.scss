@@ -2,7 +2,10 @@
   background: linear-gradient(286deg, #3f6d9b 29.23%, #a8d0db 77.36%);
   padding: 84px 0 105px;
   .banner__box-img {
-    top: -30%;
+    @include media(min, lg) {
+      position: absolute;
+      top: -30%;
+    }
   }
   // .banner__title
   &__title {
