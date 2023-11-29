@@ -3,13 +3,14 @@ $(document).ready(function () {
     dots: true,
     infinite: true,
     speed: 500,
-
+    fade: true,
+    cssEase: "linear",
     autoplay: false,
     autoplaySpeed: 5000,
     swipe: true,
     arrows: true,
-
-    appendArrows: $(".slider__controls"),
+    appendDots: $(".slider__controls-dots"),
+    appendArrows: $(".slider__controls-btns"),
   });
 
   $(".results__slider").slick({

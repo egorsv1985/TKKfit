@@ -1,18 +1,30 @@
 .promo {
-  background: linear-gradient(180deg, #02050e 8.28%, rgba(2, 5, 14, 0.65) 100%)
-    url("@img/promo-bg.png") no-repeat center / cover;
+  background: linear-gradient(180deg, #02050e 8.28%, rgba(2, 5, 14, 0.65) 100%);
   // .promo__slider
   &__slider {
   }
   // .promo__content
   &__content {
-    bottom: 8.5%;
-    left: 10.5%;
+    position: absolute;
+    top: 16em;
+    left: 1%;
+    @media only screen and (min-width: 575px) {
+      top: 13em;
+    }
+    @media only screen and (min-width: 992px) {
+      top: 30em;
+    }
   }
   .promo__button {
     padding-left: 20px;
     max-width: 310px;
-    margin-bottom: 200px;
+    margin-bottom: 245px;
+    @media only screen and (min-width: 575px) {
+      margin-bottom: 450px;
+    }
+    @media only screen and (min-width: 992px) {
+      margin-bottom: 200px;
+    }
   }
   // .promo__arrow
   &__arrow {
@@ -25,7 +37,9 @@
   }
   // .promo__box
   &__box {
+    z-index: 1;
   }
+
   // .promo__box-logo
   &__box-logo {
     width: 112px;
@@ -36,5 +50,10 @@
     background-color: #3f6d9b;
     max-width: 322px;
     clip-path: polygon(0% 0%, 100% 0%, 88% 100%, 0% 100%);
+  }
+  .slider {
+    &__box {
+      background: url("@img/promo-bg.png") no-repeat center / cover;
+    }
   }
 }
