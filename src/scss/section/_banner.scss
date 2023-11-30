@@ -1,6 +1,9 @@
 .banner {
   background: linear-gradient(286deg, #3f6d9b 29.23%, #a8d0db 77.36%);
-  padding: 84px 0 105px;
+  padding-top: 84px ;
+  @include media (min, lg) {
+    padding-bottom: 105px;
+  }
   .banner__box-img {
     @include media(min, lg) {
       position: absolute;
