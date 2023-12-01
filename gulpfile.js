@@ -84,7 +84,7 @@ gulp.task("html", function () {
     .pipe(plumber(plumberNotify("HTML")))
     .pipe(fileInclude(fileIncludeSettings))
     .pipe(webphtml())
-    .pipe(replace(/@img\//g, "/images/"))
+    .pipe(replace(/@img\//g, "../images/"))
     .pipe(gulp.dest(paths.dest.dev))
     .pipe(browserSync.stream());
 });
