@@ -10,6 +10,9 @@
   }
 
   .slider {
+    &__item {
+      margin-right: 30px;
+    }
     // .slider__controls
     &__controls {
     }
@@ -37,6 +40,9 @@
     }
     // .slider__box-img
     &__box-img {
+    }
+    &__flex {
+      row-gap: 40px;
     }
     // .slider__img
     &__img {

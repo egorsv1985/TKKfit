@@ -47,8 +47,7 @@ $(document).ready(function () {
   $(".results__slider").slick({
     infinite: true,
     speed: 500,
-    centerMode: true,
-    centerPadding: "60px",
+
     autoplay: false,
     autoplaySpeed: 5000,
     swipe: true,
