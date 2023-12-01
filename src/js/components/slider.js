@@ -21,7 +21,7 @@ $(document).ready(function () {
     autoplaySpeed: 5000,
     swipe: true,
     arrows: true,
-
+    cssEase: "linear",
     slidesToShow: 3,
     slidesToScroll: 3,
     responsive: [
