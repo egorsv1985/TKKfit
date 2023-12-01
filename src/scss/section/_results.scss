@@ -11,7 +11,7 @@
 
   .slider {
     &__item {
-      margin-right: 30px;
+      margin-right: 32px;
     }
     // .slider__controls
     &__controls {
@@ -23,7 +23,7 @@
     // .slick-arrow
     .slick-arrow {
       position: absolute;
-      top: 50%;
+      top: 27%;
       transform: translateY(-50%);
       background: #e2484d url("@img/icons/arrow-white.svg") no-repeat center;
     }
@@ -40,9 +40,16 @@
     }
     // .slider__box-img
     &__box-img {
+      min-height: 70px;
+      img {
+        width: inherit;
+      }
     }
     &__flex {
-      row-gap: 40px;
+      row-gap: 15px;
+      @include media(min, sm) {
+        row-gap: 30px;
+      }
     }
     // .slider__img
     &__img {
