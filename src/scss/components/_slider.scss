@@ -26,7 +26,9 @@
   }
   // .slider__box-img
   &__box-img {
-    right: 10%;
+    @include media(min, lg) {
+      right: 10%;
+    }
     img {
       width: 100%;
       height: auto;

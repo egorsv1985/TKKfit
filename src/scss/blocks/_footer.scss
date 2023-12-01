@@ -1,24 +1,29 @@
-.footer{
-	&__link{
-		position: relative;
+.footer {
+  &__content {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 40px;
+  }
+  &__link {
+    position: relative;
+    width: max-content;
 
-		&::before {
-		  content: "";
-		  position: absolute;
-		  width: 100%;
-		  height: 2px;
-		  border-radius: 4px;
-		  bottom: -2px;
-		  background-color: #e2484d;
-	
-		  left: 0;
-		  transform-origin: right;
-		  transform: scaleX(0);
-		  transition: transform 0.3s ease-in-out;
-		}
-		&:hover::before {
-		  transform-origin: left;
-		  transform: scaleX(1);
-		}
-	}
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      border-radius: 4px;
+      bottom: -2px;
+      background-color: #e2484d;
+
+      left: 0;
+      transform-origin: right;
+      transform: scaleX(0);
+      transition: transform 0.3s ease-in-out;
+    }
+    &:hover::before {
+      transform-origin: left;
+      transform: scaleX(1);
+    }
+  }
 }
