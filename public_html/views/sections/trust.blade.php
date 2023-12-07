@@ -3,7 +3,10 @@
 		<div class="trust__title fs-36 fw-700 lh-normal text-uppercase text-center mb-5">
 			Нам доверяют продвижение
 		</div>
-		<div class="row gy-4">
+		<?
+		echo $modx->runSnippet('multiTV', array('tvName' => 'trust', 'display' => 'all'));
+		?>
+		<!-- <div class="row gy-4">
 			<div class="col-2">
 				<div class="trust__box-img d-flex justify-content-center align-items-center h-100">
 					<picture>
@@ -207,6 +210,6 @@
 					</picture>
 				</div>
 			</div>
-		</div>
+		</div> -->
 	</div>
 </section>

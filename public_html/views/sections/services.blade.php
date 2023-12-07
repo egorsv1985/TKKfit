@@ -27,7 +27,7 @@
 				</div>
 
 				<?
-				echo $modx->runSnippet('multiTV', array('tvName' => 'services'));
+				echo $modx->runSnippet('multiTV', array('tvName' => 'services', 'display' => 'all'));
 				?>
 				<!-- <ul class="services__list d-flex flex-md-wrap flex-column gap-4">
 
