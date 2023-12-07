@@ -1,0 +1,173 @@
+<section class="prices" id="prices">
+	<div class="container">
+		<div class="prices__title fs-36 fw-700 lh-normal text-center text-uppercase">
+			Сколько стоит продвижение фитнес-клуба
+		</div>
+		<?
+		echo $modx->runSnippet('multiTV', array('tvName' => 'price'));
+		?>
+		<div class="prices__table table-responsive">
+			<!-- <table class="table">
+				<thead>
+					<tr>
+						<th></th>
+						<th><b>FIT</b>Start</th>
+						<th><b>FIT</b>Standart</th>
+						<th><b>FIT</b>Business</th>
+						<th><b>FIT</b>PRO</th>
+						<th><b>FIT</b>Custom</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="cost">
+						<td></td>
+						<td>
+							<div class="table__item">50 000 ₽/мес</div>
+						</td>
+						<td>
+							<div class="table__item">70 000 ₽/мес</div>
+						</td>
+						<td>
+							<div class="table__item">100 000 ₽/мес</div>
+						</td>
+						<td>
+							<div class="table__item">150 000 ₽/мес</div>
+						</td>
+						<td>
+							<div class="table__item">Custom</div>
+						</td>
+					</tr>
+					<tr class="empty">
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr class="">
+						<td class="name">
+							Разработка лендинга<br />
+							для рекламы
+						</td>
+						<td><img src="template/images/icons/remove.svg" alt="remove" /></td>
+						<td><img src="template/images/icons/check.svg" alt="check" /></td>
+						<td><img src="template/images/icons/check.svg" alt="check" /></td>
+						<td><img src="template/images/icons/check.svg" alt="check" /></td>
+						<td><img src="template/images/icons/check.svg" alt="check" /></td>
+					</tr>
+					<tr class="">
+						<td class="name">Разработка сайта для SEO</td>
+						<td><img src="template/images/icons/remove.svg" alt="remove" /></td>
+						<td><img src="template/images/icons/remove.svg" alt="remove" /></td>
+						<td><img src="template/images/icons/remove.svg" alt="remove" /></td>
+						<td><img src="template/images/icons/check.svg" alt="check" /></td>
+						<td><img src="template/images/icons/check.svg" alt="check" /></td>
+					</tr>
+					<tr class="">
+						<td class="name">SEO-продвижение</td>
+						<td><img src="template/images/icons/remove.svg" alt="remove" /></td>
+						<td><img src="template/images/icons/remove.svg" alt="remove" /></td>
+						<td><img src="template/images/icons/check.svg" alt="check" /></td>
+						<td><img src="template/images/icons/check.svg" alt="check" /></td>
+						<td><img src="template/images/icons/check.svg" alt="check" /></td>
+					</tr>
+					<tr class="">
+						<td class="name">Контекстная реклама</td>
+						<td><img src="template/images/icons/check.svg" alt="check" /></td>
+						<td><img src="template/images/icons/check.svg" alt="check" /></td>
+						<td><img src="template/images/icons/check.svg" alt="check" /></td>
+						<td><img src="template/images/icons/check.svg" alt="check" /></td>
+						<td><img src="template/images/icons/check.svg" alt="check" /></td>
+					</tr>
+					<tr class="">
+						<td class="name">Таргетированная реклама</td>
+						<td><img src="template/images/icons/check.svg" alt="check" /></td>
+						<td><img src="template/images/icons/check.svg" alt="check" /></td>
+						<td><img src="template/images/icons/check.svg" alt="check" /></td>
+						<td><img src="template/images/icons/check.svg" alt="check" /></td>
+						<td><img src="template/images/icons/check.svg" alt="check" /></td>
+					</tr>
+					<tr class="">
+						<td class="name">SMM-продвижение</td>
+						<td><img src="template/images/icons/remove.svg" alt="remove" /></td>
+						<td><img src="template/images/icons/remove.svg" alt="remove" /></td>
+						<td><img src="template/images/icons/remove.svg" alt="remove" /></td>
+						<td><img src="template/images/icons/check.svg" alt="check" /></td>
+						<td><img src="template/images/icons/check.svg" alt="check" /></td>
+					</tr>
+					<tr class="">
+						<td class="name">Разработка брендбука</td>
+						<td><img src="template/images/icons/remove.svg" alt="remove" /></td>
+						<td><img src="template/images/icons/remove.svg" alt="remove" /></td>
+						<td><img src="template/images/icons/remove.svg" alt="remove" /></td>
+						<td><img src="template/images/icons/remove.svg" alt="remove" /></td>
+						<td><img src="template/images/icons/check.svg" alt="check" /></td>
+					</tr>
+					<tr class="">
+						<td class="name">Редизайн и ребрендинг</td>
+						<td><img src="template/images/icons/remove.svg" alt="remove" /></td>
+						<td><img src="template/images/icons/remove.svg" alt="remove" /></td>
+						<td><img src="template/images/icons/remove.svg" alt="remove" /></td>
+						<td><img src="template/images/icons/check.svg" alt="check" /></td>
+						<td><img src="template/images/icons/check.svg" alt="check" /></td>
+					</tr>
+					<tr class="budget">
+						<td class="name">
+							Рекомендуемый бюджет в месяц<br />
+							на продвижение
+						</td>
+						<td>от 10 000 ₽</td>
+						<td>от 20 000 ₽</td>
+						<td>от 30 000 ₽</td>
+						<td>от 50 000 ₽</td>
+						<td>Custom</td>
+					</tr>
+					<tr class="letters">
+						<td class="name">
+							SMS-рассылки для<br />
+							фитнес-клуба по базе МТС
+						</td>
+						<td>от 70 000 ₽</td>
+						<td>от 100 000 ₽</td>
+						<td>от 200 000 ₽</td>
+						<td>от 500 000 ₽</td>
+						<td>Custom</td>
+					</tr>
+					<tr class="publicity">
+						<td class="name">Медийная и видеореклама</td>
+						<td>от 50 000 ₽</td>
+						<td>от 70 000 ₽</td>
+						<td>от 100 000 ₽</td>
+						<td>от 150 000 ₽</td>
+						<td>Custom</td>
+					</tr>
+					<tr class="empty">
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr class="order">
+						<td class=""></td>
+						<td>
+							<div class="table__item">Заказать</div>
+						</td>
+						<td>
+							<div class="table__item">Заказать</div>
+						</td>
+						<td>
+							<div class="table__item">Заказать</div>
+						</td>
+						<td>
+							<div class="table__item">Заказать</div>
+						</td>
+						<td>
+							<div class="table__item">Заказать</div>
+						</td>
+					</tr>
+				</tbody>
+			</table> -->
+		</div>
+	</div>
+</section>

@@ -1,0 +1,191 @@
+<section class="results position-relative" id="results">
+	<div class="container">
+		<div class="results__title fs-36 fw-700 text-uppercase text-center">
+			наши результаты
+		</div>
+		<?
+		echo $modx->runSnippet('multiTV', array('tvName' => 'results'));
+		?>
+		<!-- <div class="results__slider slider">
+			<div class="slider__item">
+				<div class="slider__box py-4 ps-3">
+					<div class="row gy-3">
+						<div class="col-12 col-sm-6">
+							<div class="slider__flex align-items-center align-items-sm-start h-100 justify-content-between flex-column d-flex">
+								<div class="slider__box-img">
+									<img src="template/images/logo_oasis.png" alt="oasis" class="slider__img" />
+								</div>
+								<div class="slider__content d-flex flex-column align-items-center align-items-sm-start">
+									<div class="slider__region fs-16 lh-normal ps-4">Регион</div>
+									<div class="slider__city py-1 px-2 lh-120 fs-20 fw-500 text-center">
+										Сургут
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6">
+							<div class="slider__flex align-items-center align-items-sm-start h-100 justify-content-between flex-column d-flex">
+								<div class="slider__content d-flex flex-column align-items-center align-items-sm-start">
+									<div class="slider__num fs-30 fw-900 lh-normal">34</div>
+									<div class="slider__text fs-16 lh-normal">Число заявок</div>
+								</div>
+								<div class="slider__content d-flex flex-column align-items-center align-items-sm-start">
+									<div class="slider__num fs-30 fw-900 lh-normal">
+										1 200 RUB
+									</div>
+									<div class="slider__text fs-16 lh-normal">
+										Стоимость заявки
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="slider__item">
+				<div class="slider__box py-4 ps-3">
+					<div class="row gy-3">
+						<div class="col-12 col-sm-6">
+							<div class="slider__flex align-items-center align-items-sm-start h-100 justify-content-between flex-column d-flex">
+								<div class="slider__box-img">
+									<img src="template/images/logo_palestra.png" alt="oasis" class="slider__img" />
+								</div>
+								<div class="slider__content d-flex flex-column align-items-center align-items-sm-start">
+									<div class="slider__region fs-16 lh-normal ps-4">Регион</div>
+									<div class="slider__city py-1 px-2 lh-120 fs-20 fw-500 text-center">
+										Архангельск
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6">
+							<div class="slider__flex align-items-center align-items-sm-start h-100 justify-content-between flex-column d-flex">
+								<div class="slider__content d-flex flex-column align-items-center align-items-sm-start">
+									<div class="slider__num fs-30 fw-900 lh-normal">24</div>
+									<div class="slider__text fs-16 lh-normal">Число заявок</div>
+								</div>
+								<div class="slider__content d-flex flex-column align-items-center align-items-sm-start">
+									<div class="slider__num fs-30 fw-900 lh-normal">
+										2 500 RUB
+									</div>
+									<div class="slider__text fs-16 lh-normal">
+										Стоимость заявки
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="slider__item">
+				<div class="slider__box py-4 ps-3">
+					<div class="row gy-3">
+						<div class="col-12 col-sm-6">
+							<div class="slider__flex align-items-center align-items-sm-start h-100 justify-content-between flex-column d-flex">
+								<div class="slider__box-img">
+									<img src="template/images/logo_zaruba.png" alt="oasis" class="slider__img" />
+								</div>
+								<div class="slider__content d-flex flex-column align-items-center align-items-sm-start">
+									<div class="slider__region fs-16 lh-normal ps-4">Регион</div>
+									<div class="slider__city py-1 px-2 lh-120 fs-20 fw-500 text-center">
+										Подольск
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6">
+							<div class="slider__flex align-items-center align-items-sm-start h-100 justify-content-between flex-column d-flex">
+								<div class="slider__content d-flex flex-column align-items-center align-items-sm-start">
+									<div class="slider__num fs-30 fw-900 lh-normal">125</div>
+									<div class="slider__text fs-16 lh-normal">Число заявок</div>
+								</div>
+								<div class="slider__content d-flex flex-column align-items-center align-items-sm-start">
+									<div class="slider__num fs-30 fw-900 lh-normal">
+										1 350 RUB
+									</div>
+									<div class="slider__text fs-16 lh-normal">
+										Стоимость заявки
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="slider__item">
+				<div class="slider__box py-4 ps-3">
+					<div class="row gy-3">
+						<div class="col-12 col-sm-6">
+							<div class="slider__flex align-items-center align-items-sm-start h-100 justify-content-between flex-column d-flex">
+								<div class="slider__box-img">
+									<img src="template/images/logo_oasis.png" alt="oasis" class="slider__img" />
+								</div>
+								<div class="slider__content d-flex flex-column align-items-center align-items-sm-start">
+									<div class="slider__region fs-16 lh-normal ps-4">Регион</div>
+									<div class="slider__city py-1 px-2 lh-120 fs-20 fw-500 text-center">
+										Екатеринбург
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6">
+							<div class="slider__flex align-items-center align-items-sm-start h-100 justify-content-between flex-column d-flex">
+								<div class="slider__content d-flex flex-column align-items-center align-items-sm-start">
+									<div class="slider__num fs-30 fw-900 lh-normal">19</div>
+									<div class="slider__text fs-16 lh-normal">Число заявок</div>
+								</div>
+								<div class="slider__content d-flex flex-column align-items-center align-items-sm-start">
+									<div class="slider__num fs-30 fw-900 lh-normal">
+										2 100 RUB
+									</div>
+									<div class="slider__text fs-16 lh-normal">
+										Стоимость заявки
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="slider__item">
+				<div class="slider__box py-4 ps-3">
+					<div class="row gy-3">
+						<div class="col-12 col-sm-6">
+							<div class="slider__flex align-items-center align-items-sm-start h-100 justify-content-between flex-column d-flex">
+								<div class="slider__box-img">
+									<img src="template/images/logo_palestra.png" alt="oasis" class="slider__img" />
+								</div>
+
+								<div class="slider__content d-flex flex-column align-items-center align-items-sm-start">
+									<div class="slider__region fs-16 lh-normal ps-4">Регион</div>
+									<div class="slider__city py-1 px-2 lh-120 fs-20 fw-500 text-center">
+										Новосибирск
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6">
+							<div class="slider__flex align-items-center align-items-sm-start h-100 justify-content-between flex-column d-flex">
+								<div class="slider__content d-flex flex-column align-items-center align-items-sm-start">
+									<div class="slider__num fs-30 fw-900 lh-normal">12</div>
+									<div class="slider__text fs-16 lh-normal">Число заявок</div>
+								</div>
+								<div class="slider__content d-flex flex-column align-items-center align-items-sm-start">
+									<div class="slider__num fs-30 fw-900 lh-normal">
+										2 400 RUB
+									</div>
+									<div class="slider__text fs-16 lh-normal">
+										Стоимость заявки
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div> -->
+	</div>
+</section>
