@@ -42,7 +42,7 @@
 									<a href="#">Блог</a>
 								</li>
 								<li class="">
-									<a href="#map">Контакты</a>
+									<a href="#map-section">Контакты</a>
 								</li>
 							</ul>
 						</nav>

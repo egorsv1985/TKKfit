@@ -583,7 +583,7 @@ h6 {
 .advantages__list {
   gap: 45px;
 }
-.advantages__list--right {
+.advantages__list:last-child {
   z-index: 1;
 }
 .advantages__item {
@@ -861,9 +861,23 @@ h6 {
 .trust {
   padding-top: 110px;
 }
+.trust__box-img {
+  min-height: 100px;
+}
 .trust__box-img img,
 .trust__box-img picture {
   filter: grayscale(100%);
+}
+.map {
+  /* z-index: -1; */
+}
+
+.ymaps-2-1-79-pane {
+  filter: grayscale(1);
+  -ms-filter: grayscale(1);
+  -webkit-filter: grayscale(1);
+  -moz-filter: grayscale(1);
+  -o-filter: grayscale(1);
 }
 @supports (-webkit-appearance: none) {
   .button::after {
@@ -928,10 +942,10 @@ h6 {
   .advantages__content {
     margin-top: -30px;
   }
-  .advantages__list--left {
+  .advantages__list:first-child {
     margin-top: -75px;
   }
-  .advantages__list--right {
+  .advantages__list:last-child {
     bottom: -55px;
   }
   .banner {

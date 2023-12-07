@@ -12,12 +12,13 @@
 				</div>
 			</div>
 			<div class="col-12 col-lg-8">
-				<?
-				echo $modx->runSnippet('multiTV', array('tvName' => 'advantages', 'display' => 'all'));
-				?>
 
+				<div class="advantages__lists d-flex flex-column flex-md-row justify-content-center justify-content-lg-between">
+					{!! $modx->runSnippet('multiTV', ['tvName' => 'advantages', 'display' => 'all', 'evenClass'=>'even' ,'oddClass'=>'odd', 'rowTpl'=>'serviceTplOdd']) !!}
+					{!! $modx->runSnippet('multiTV', ['tvName' => 'advantages', 'display' => 'all', 'evenClass'=>'even' ,'oddClass'=>'odd', 'rowTpl'=>'serviceTplEven']) !!}
+
+				</div>
 				<!-- <div class="advantages__lists d-flex flex-column flex-md-row justify-content-center justify-content-lg-between">
-					<div class="advantages__lists d-flex flex-column flex-md-row justify-content-center justify-content-lg-between">
 						@php
 						$advantages = json_decode($documentObject['advantages'], true)['fieldValue'];
 
