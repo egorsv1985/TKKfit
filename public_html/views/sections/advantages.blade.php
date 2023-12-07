@@ -12,7 +12,11 @@
 				</div>
 			</div>
 			<div class="col-12 col-lg-8">
-				<div class="advantages__lists d-flex flex-column flex-md-row justify-content-center justify-content-lg-between">
+				<?
+				echo $modx->runSnippet('multiTV', array('tvName' => 'advantages', 'display' => 'all'));
+				?>
+
+				<!-- <div class="advantages__lists d-flex flex-column flex-md-row justify-content-center justify-content-lg-between">
 					<div class="advantages__lists d-flex flex-column flex-md-row justify-content-center justify-content-lg-between">
 						@php
 						$advantages = json_decode($documentObject['advantages'], true)['fieldValue'];
@@ -45,7 +49,7 @@
 						@endif
 					</div>
 
-				</div>
+				</div> -->
 				<!-- <div class="advantages__lists d-flex flex-column flex-md-row justify-content-center justify-content-lg-between">
 					<ul class="advantages__list position-relative ps-0 mb-0 d-flex flex-column align-items-center">
 						<li class="advantages__item">
