@@ -32,7 +32,7 @@ $settings['templates'] = array(
     'outerTpl' => '<div class="results__slider slider">[+wrapper+]</div>',
     'rowTpl' =>
     '<div class="slider__item pt-4">
-    <div class="slider__box py-4 ps-3">
+    <div class="slider__box py-4 px-3">
         <div class="row gy-3">
             <div class="col-12 col-sm-6">
                 <div class="slider__flex align-items-center align-items-sm-start h-100 justify-content-between flex-column d-flex">

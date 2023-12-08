@@ -1,4 +1,4 @@
-<section class="advantages py-4 pb-lg-0" id="advantages">
+<section class="advantages py-5 p-lg-4 pb-lg-0" id="advantages">
 	<div class="container">
 		<div class="row gy-4">
 			<div class="col-12 col-lg-4">

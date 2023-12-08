@@ -22,7 +22,7 @@ $settings['templates'] = array(
     <div class="slider__item position-relative">
         <div class="container">
             <div class="row gy-4">
-                <div class="col-9 col-lg-5">
+                <div class="col-11 col-sm-9 col-lg-5">
                     <div class="slider__title fs-42 fw-700 text-uppercase lh-normal h1 position-relative">[+title+]<span class="slider__counter fw-900">[+iteration+]</span></div>
                     </div>
                     <div class="col-12 col-lg-7">

@@ -1,16 +1,16 @@
 <section class="promo" id="promo">
 	<div class="slider__box pb-4 pb-sm-0">
 		<div class="container position-relative">
-			<div class="slider__controls-btns d-flex gap-4 flex-column flex-md-row"></div>
-			<div class="slider__controls-dots"></div>
+			<div class="slider__controls-btns d-flex gap-4"></div>
+			<div class="slider__controls-dots d-none d-md-block"></div>
 
 			<div class="promo__content d-flex flex-column">
 				<a data-popup="#callback" href="#callback" role="button" class="promo__button button fs-24 lh-normal position-relative">
 					Оставить заявку<br />
 					на продвижение
 				</a>
-				<div class="promo__box d-flex align-items-center gap-4 position-relative">
-					<div class="promo__box-logo">
+				<div class="promo__box ps-3 ps-md-0 d-flex align-items-center gap-4 position-relative">
+					<div class="promo__box-logo d-none d-md-block">
 						<img src="template/images/icons/promo-logo.svg" alt="logo" class="mw-100" />
 					</div>
 					<div class="promo__subtitle fs-18 fw-500 lh-125 py-3 px-4">
@@ -19,7 +19,9 @@
 				</div>
 			</div>
 		</div>
-
+		@php
+		json_decode($documentObject['promo_slide'], true)['fieldValue'];
+		@endphp
 
 		<?
 		echo $modx->runSnippet('multiTV', array('tvName' => 'promo_slide'));

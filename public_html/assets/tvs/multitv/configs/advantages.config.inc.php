@@ -7,6 +7,6 @@ $settings['fields'] = array(
     )
 );
 $settings['templates'] = array(
-    'outerTpl' => '<ul class="advantages__list  position-relative ps-0 mb-0 d-flex flex-column align-items-center">[+wrapper+]</ul>',
+    'outerTpl' => '<ul class="advantages__list  position-relative ps-0 mb-0 flex-column align-items-center">[+wrapper+]</ul>',
     'rowTpl' => ''
 );

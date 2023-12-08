@@ -3,7 +3,7 @@
 		<div class="row gy-4 justify-content-center justify-content-lg-start">
 			<div class="col-8 col-lg-6 order-1 order-lg-0">
 				<div class="banner__box-img">
-					<img class="w-100 h-auto" src="template/images/banner.png" alt="banner" width="552" height="537" />
+					<img class="h-auto" src="template/images/banner.png" alt="banner" width="552" height="537" />
 				</div>
 			</div>
 			<div class="col-12 col-lg-6">

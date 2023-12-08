@@ -1,7 +1,7 @@
-<section class="services bg-dark py-5 position-relative" id="services">
+<section class="services bg-dark py-5" id="services">
 	<div class="container">
 		<div class="row pb-5">
-			<div class="col-12 col-lg-4">
+			<div class="col-12 col-lg-4 order-1 order-lg-0 services__pseudo position-relative">
 				<div class="services__box-img position-relative">
 					<picture>
 						<source srcset="template/images/forma.webp" type="image/webp"><img src="template/images/forma.png" alt="forma" class="services__img" />

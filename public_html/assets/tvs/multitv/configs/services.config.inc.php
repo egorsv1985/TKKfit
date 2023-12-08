@@ -8,6 +8,6 @@ $settings['fields'] = array(
     )
 );
 $settings['templates'] = array(
-    'outerTpl' => '<ul class="services__list d-flex flex-md-wrap flex-column gap-4">[+wrapper+]</ul>',
+    'outerTpl' => '<ul class="services__list d-flex flex-md-wrap flex-column gap-4 ps-0">[+wrapper+]</ul>',
     'rowTpl' => '<li class="services__item fs-22 lh-normal ps-5 position-relative"><span>[+text+]</span></li>'
 );
