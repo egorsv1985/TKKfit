@@ -17,7 +17,7 @@
 	<link rel="stylesheet" href="template/css/template_styles.css" />
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 
-	<script src="https://api-maps.yandex.ru/2.0/?load=package.full&?apikey=bcdc8e2e-fa4a-44c1-833f-6fb67f82b03d&lang=ru_RU" type="text/javascript"></script>
+	<script src="https://api-maps.yandex.ru/2.1/?load=package.full&?apikey=bcdc8e2e-fa4a-44c1-833f-6fb67f82b03d&lang=ru_RU" type="text/javascript"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.5/jquery.inputmask.min.js"></script>
 

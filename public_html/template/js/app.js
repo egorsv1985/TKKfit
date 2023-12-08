@@ -68,82 +68,183 @@ $(document).ready(function () {
     ],
   });
   ymaps.ready(function () {
-    var myMap = new ymaps.Map(
-        "map",
-        {
-          center: [55.751574, 37.573856],
-          zoom: 9,
+    // Создаем карту и указываем центр и масштаб
+    var myMap = new ymaps.Map("map", {
+      center: [55.751574, 37.573856],
+      zoom: 4,
+    });
+
+    // Создаем макет содержимого для метки
+    var MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+      '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+    );
+
+    // Создаем кластеризатор меток
+    var clusterer = new ymaps.Clusterer({
+      preset: "islands#invertedVioletClusterIcons",
+      groupByCoordinates: false,
+      clusterDisableClickZoom: true,
+      clusterHideIconOnBalloonOpen: false,
+      geoObjectHideIconOnBalloonOpen: false,
+    });
+
+    // Создаем массив с координатами и свойствами меток
+    var placemarks = [
+      {
+        coordinates: [61.263354, 73.432163],
+        properties: {
+          hintContent: "Метка 1",
+          balloonContent: "Это красивая метка 1",
         },
-        {
-          searchControlProvider: "yandex#search",
-        }
-      ),
-      // Создаём макет содержимого.
-      MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
-        '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
-      ),
-      myPlacemark = new ymaps.Placemark(
-        myMap.getCenter(),
-        {
-          hintContent: "Собственный значок метки",
-          balloonContent: "Это красивая метка",
+      },
+      {
+        coordinates: [64.541724, 40.529264],
+        properties: {
+          hintContent: "Метка 2",
+          balloonContent: "Это красивая метка 2",
         },
+      },
+      {
+        coordinates: [55.382472, 37.53959],
+        properties: {
+          hintContent: "Метка 3",
+          balloonContent: "Это красивая метка 3",
+        },
+      },
+      {
+        coordinates: [55.755819, 37.617644],
+        properties: {
+          hintContent: "Метка 4",
+          balloonContent: "Это красивая метка 4",
+        },
+      },
+      {
+        coordinates: [55.804162, 37.322934],
+        properties: {
+          hintContent: "Метка 5",
+          balloonContent: "Это красивая метка 5",
+        },
+      },
+      {
+        coordinates: [55.820172, 37.312325],
+        properties: {
+          hintContent: "Метка 6",
+          balloonContent: "Это красивая метка 6",
+        },
+      },
+      {
+        coordinates: [55.901268, 37.700559],
+        properties: {
+          hintContent: "Метка 7",
+          balloonContent: "Это красивая метка 7",
+        },
+      },
+      {
+        coordinates: [55.655493, 37.484667],
+        properties: {
+          hintContent: "Метка 8",
+          balloonContent: "Это красивая метка 8",
+        },
+      },
+      {
+        coordinates: [55.824172, 37.503603],
+        properties: {
+          hintContent: "Метка 9",
+          balloonContent: "Это красивая метка 9",
+        },
+      },
+      {
+        coordinates: [55.58931, 37.454034],
+        properties: {
+          hintContent: "Метка 10",
+          balloonContent: "Это красивая метка 10",
+        },
+      },
+      {
+        coordinates: [45.027355, 39.048732],
+        properties: {
+          hintContent: "Метка 11",
+          balloonContent: "Это красивая метка 11",
+        },
+      },
+      {
+        coordinates: [55.783124, 37.678272],
+        properties: {
+          hintContent: "Метка 12",
+          balloonContent: "Это красивая метка 12",
+        },
+      },
+      {
+        coordinates: [51.685211, 39.128188],
+        properties: {
+          hintContent: "Метка 13",
+          balloonContent: "Это красивая метка 13",
+        },
+      },
+      {
+        coordinates: [55.681432, 37.29806],
+        properties: {
+          hintContent: "Метка 14",
+          balloonContent: "Это красивая метка 14",
+        },
+      },
+      {
+        coordinates: [55.732271, 37.412586],
+        properties: {
+          hintContent: "Метка 15",
+          balloonContent: "Это красивая метка 15",
+        },
+      },
+      {
+        coordinates: [55.805022, 37.419251],
+        properties: {
+          hintContent: "Метка 16",
+          balloonContent: "Это красивая метка 16",
+        },
+      },
+      {
+        coordinates: [55.800428, 37.726807],
+        properties: {
+          hintContent: "Метка 17",
+          balloonContent: "Это красивая метка 17",
+        },
+      },
+      {
+        coordinates: [61.248409, 73.424258],
+        properties: {
+          hintContent: "Метка 18",
+          balloonContent: "Это красивая метка 18",
+        },
+      },
+    ];
+
+    // Создаем метки и добавляем их в кластеризатор
+    for (var i = 0; i < placemarks.length; i++) {
+      var placemark = new ymaps.Placemark(
+        placemarks[i].coordinates,
+        placemarks[i].properties,
         {
-          // Опции.
-          // Необходимо указать данный тип макета.
           iconLayout: "default#image",
-          // Своё изображение иконки метки.
           iconImageHref: "template/images/marker.png",
-          // Размеры метки.
           iconImageSize: [30, 42],
-          // Смещение левого верхнего угла иконки относительно
-          // её "ножки" (точки привязки).
           iconImageOffset: [-5, -38],
-        }
-      ),
-      myPlacemarkWithContent = new ymaps.Placemark(
-        [55.661574, 37.573856],
-        {
-          hintContent: "Собственный значок метки с контентом",
-          balloonContent: "А эта — новогодняя",
-          iconContent: "12",
-        },
-        {
-          // Опции.
-          // Необходимо указать данный тип макета.
-          iconLayout: "default#imageWithContent",
-          // Своё изображение иконки метки.
-          iconImageHref: "template/images/marker.png",
-          // Размеры метки.
-          iconImageSize: [48, 48],
-          // Смещение левого верхнего угла иконки относительно
-          // её "ножки" (точки привязки).
-          iconImageOffset: [-24, -24],
-          // Смещение слоя с содержимым относительно слоя с картинкой.
-          iconContentOffset: [15, 15],
-          // Макет содержимого.
           iconContentLayout: MyIconContentLayout,
         }
       );
+      clusterer.add(placemark);
+    }
 
-    myMap.geoObjects.add(myPlacemark).add(myPlacemarkWithContent);
+    // Добавляем кластеризатор на карту
+    myMap.geoObjects.add(clusterer);
+
+    // При клике на метку открываем балун
+    clusterer.events.add("click", function (e) {
+      var target = e.get("target");
+      if (target && target.getGeoObjects) {
+        myMap.setCenter(target.geometry.getCoordinates(), myMap.getZoom() + 1, {
+          duration: 500,
+        });
+      }
+    });
   });
 });
-// ymaps.ready(initMap);
-
-// function initMap() {
-//   var myMap = new ymaps.Map("map", {
-//     center: [55.76, 37.64],
-//     zoom: 6,
-//   });
-
-//   var myPlacemark = new ymaps.Placemark([55.76, 37.64], {
-//     hideIconOnBalloonOpen: false,
-//     iconLayout: "default#image",
-//     iconImageHref: "template/images/marker.png",
-//     iconImageSize: [60, 85],
-//     iconImageOffset: [-30, -85],
-//   });
-
-//   myMap.geoObjects.add(myPlacemark);
-// }
