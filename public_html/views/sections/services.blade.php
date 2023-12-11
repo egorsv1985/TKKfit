@@ -25,65 +25,7 @@
 				<div class="services__title fs-36 fw-700 text-uppercase mb-5">
 					Услуги для фитнес клуба
 				</div>
-
-				<?
-				echo $modx->runSnippet('multiTV', array('tvName' => 'services', 'display' => 'all'));
-				?>
-				<!-- <ul class="services__list d-flex flex-md-wrap flex-column gap-4">
-
-					<li class="services__item fs-22 lh-normal ps-5 position-relative">
-						Разработка сайта
-					</li>
-					<li class="services__item fs-22 lh-normal ps-5 position-relative">
-						Контекстная<br />
-						реклама
-					</li>
-					<li class="services__item fs-22 lh-normal ps-5 position-relative">
-						SMM-продвижение
-					</li>
-					<li class="services__item fs-22 lh-normal ps-5 position-relative">
-						Редизайн и<br />
-						ребрендинг
-					</li>
-					<li class="services__item fs-22 lh-normal ps-5 position-relative">
-						Медийная и<br />
-						видеореклама
-					</li>
-					<li class="services__item fs-22 lh-normal ps-5 position-relative">
-						Подключение<br />
-						коллтрекинга
-					</li>
-					<li class="services__item fs-22 lh-normal ps-5 position-relative">
-						Настройка<br />
-						сквозной аналитики
-					</li>
-					<li class="services__item fs-22 lh-normal ps-5 position-relative">
-						SEO-продвижение
-					</li>
-					<li class="services__item fs-22 lh-normal ps-5 position-relative">
-						Таргетированная<br />
-						реклама
-					</li>
-
-					<li class="services__item fs-22 lh-normal ps-5 position-relative">
-						Разработка брендбука
-					</li>
-					<li class="services__item fs-22 lh-normal ps-5 position-relative">
-						Реклама в<br />
-						мессенджерах<br />
-						(Viber, Telegram и др)
-					</li>
-					<li class="services__item fs-22 lh-normal ps-5 position-relative">
-						SMS-рассылки<br />
-						для фитнес-клуба<br />
-						по базе МТС
-					</li>
-					<li class="services__item fs-22 lh-normal ps-5 position-relative">
-						Реклама в геосервисах<br />
-						Яндекса (Справочник,<br />
-						Навигатор)
-					</li>
-				</ul> -->
+				{!! $modx->runSnippet('multiTV', ['tvName' => 'services', 'display' => 'all']) !!}
 			</div>
 		</div>
 	</div>

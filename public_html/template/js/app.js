@@ -22,9 +22,7 @@ $(document).ready(function () {
       $("header").removeClass("fixed");
     }
   });
-});
 
-$(document).ready(function () {
   $(".promo__slider").slick({
     dots: true,
     infinite: true,
@@ -286,6 +284,7 @@ $(document).ready(function () {
       }
     });
   });
+  console.log("hello");
   $(".ajax-form form").live("submit", function (e) {
     var form = $(this);
     var url = $(form).attr("action");

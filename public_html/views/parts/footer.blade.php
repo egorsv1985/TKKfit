@@ -57,7 +57,7 @@
 
 				</button>
 			</div>
-			<div class="modal-body">
+			<div class="modal-body ajax-form">
 				{!! $modx->runSnippet('formLister', [
 				'formid'=>'callback',
 				'rules'=>'
