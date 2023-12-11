@@ -4,7 +4,7 @@
 			<div class="col-2 col-sm-5 col-lg-2 position-relative">
 				<div class="d-flex align-items-center h-100 justify-content-lg-center">
 					<a href="/" class="d-block mw-100 text-center">
-						<img src="/template/images/icons/logo.svg" alt="logo" class="mw-100" />
+						<img src="/template/images/icons/logo.svg" alt="tkkfitness" class="mw-100" />
 					</a>
 				</div>
 			</div>
@@ -51,17 +51,18 @@
 			</div>
 			<div class="col-7 col-sm-5 col-lg-4 col-xl-3">
 				<div class="header__box d-flex flex-column fw-500 align-items-end align-items-lg-center position-relative text-nowrap">
-					<a href="tel:8(499) 404 00 99" class="header__link fs-24 fw-700">
+					<a href="tel:84994040099" class="header__link fs-24 fw-700">
 						8(499) 404 00 99
 					</a>
-					<a data-popup="#callback" href="#callback" role="button" class="header__link">
-						Заказать обратный звонок
-					</a>
+					<button type="button" data-bs-toggle="modal" data-bs-target="#callback" class="header__link">
+						<span>Заказать обратный звонок</span>
+					</button>
+
 				</div>
 			</div>
 			<div class="col-2 col-sm-1">
 				<div class="d-flex d-lg-none h-100 align-items-center">
-					<button type="button" class="header__burger burger w-100">
+					<button type="button" class="header__burger burger w-100" title="burger">
 						<span class="burger__inner position-relative w-100 h-100 d-flex justify-content-center align-items-center">
 							<span></span>
 						</span>

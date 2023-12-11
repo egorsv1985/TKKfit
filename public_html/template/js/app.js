@@ -92,17 +92,17 @@ $(document).ready(function () {
       {
         coordinates: [61.263354, 73.432163],
         properties: {
-          hintContent: "oasisfit",
-          name: "oasisfit",
-          address: "Сургут",
+          hintContent: "oasis",
+          name: "oasis",
+          address: "Сургут, ул. Профсоюзов, 53/2",
           link: "https://oasisfit.ru/",
         },
       },
       {
         coordinates: [64.541724, 40.529264],
         properties: {
-          hintContent: "palestrafitness",
-          name: "palestrafitness",
+          hintContent: "palestra",
+          name: "palestra",
           address: "Архангельск",
           link: "https://palestrafitness.ru/",
         },
@@ -112,25 +112,26 @@ $(document).ready(function () {
         properties: {
           hintContent: "zaruba",
           name: "zaruba",
-          address: "Подольск",
+          address: "Московская область, Подольск, мкр. Климовск, Заводская 24А",
           link: "pd.zaruba-fitness.ru",
         },
       },
       {
         coordinates: [55.755819, 37.617644],
         properties: {
-          hintContent: "lesfitness",
-          name: "lesfitness",
-          address: "Москва",
+          hintContent: "Шамбала",
+          name: "Шамбала",
+          address: "Москва, Щелковское шоссе, д. 100 к. 10",
           link: "yoga.lesfitness.ru/",
         },
       },
       {
         coordinates: [55.804162, 37.322934],
         properties: {
-          hintContent: "vsesvoifit",
-          name: "vsesvoifit",
-          address: "Красногорск",
+          hintContent: "ВСЕ СВОИ",
+          name: "ВСЕ СВОИ",
+          address:
+            "Московская область, г.Красногорск, Ильинское шоссе, дом 14, корпус 1",
           link: "https://vsesvoifit.ru/",
         },
       },
@@ -139,16 +140,16 @@ $(document).ready(function () {
         properties: {
           hintContent: "alex-fit",
           name: "alex-fit",
-          address: "Красногорск",
+          address: "Московская область, г.Красногорск, ул. Дачная 11А",
           link: "alex-fit.ru",
         },
       },
       {
         coordinates: [55.901268, 37.700559],
         properties: {
-          hintContent: "worldclass-myt",
-          name: "worldclass-myt",
-          address: "Мытищи",
+          hintContent: "worldclass",
+          name: "worldclass",
+          address: "Мытищи, ул. Благовещенская, с13",
           link: "worldclass-myt.ru",
         },
       },
@@ -157,7 +158,7 @@ $(document).ready(function () {
         properties: {
           hintContent: "zaruba",
           name: "zaruba",
-          address: "Москва",
+          address: "Москва, ул. 26-ти Бакинских Комиссаров, д. 7, к. 6",
           link: "https://uz.zaruba-fitness.ru/",
         },
       },
@@ -166,25 +167,16 @@ $(document).ready(function () {
         properties: {
           hintContent: "fitnessnova",
           name: "fitnessnova",
-          address: "Москва",
+          address: "Г. МОСКВА, МЕТРО ВОЙКОВСКАЯ СТАРОПЕТРОВСКИЙ ПР-Д, 11К1",
           link: "fitnessnova.ru",
-        },
-      },
-      {
-        coordinates: [55.58931, 37.454034],
-        properties: {
-          hintContent: "50gymmoscow",
-          name: "50gymmoscow",
-          address: "Адрес метки 1",
-          link: "50gymmoscow.ru",
         },
       },
       {
         coordinates: [45.027355, 39.048732],
         properties: {
-          hintContent: "50gym-offer",
-          name: "50gym-offer",
-          address: "Краснодар",
+          hintContent: "50gym",
+          name: "50gym",
+          address: "г.Краснодар, Стасова 178/1",
           link: "50gym-offer.ru",
         },
       },
@@ -193,16 +185,16 @@ $(document).ready(function () {
         properties: {
           hintContent: "limestone",
           name: "limestone",
-          address: "Сургут",
+          address: "Москва, Леснорядский переулок, дом 18 строение 6",
           link: "https://limestone.su",
         },
       },
       {
         coordinates: [51.685211, 39.128188],
         properties: {
-          hintContent: "castavrn",
-          name: "castavrn",
-          address: "Воронеж",
+          hintContent: "CASTA",
+          name: "CASTA",
+          address: "г. Воронеж, ул. 9 Января, 288А",
           link: "castavrn.ru",
         },
       },
@@ -220,7 +212,7 @@ $(document).ready(function () {
         properties: {
           hintContent: "neo-stream",
           name: "neo-stream",
-          address: "Москва",
+          address: "г. Москва, Партизанская, 10",
           link: "https://neo-stream.ru/",
         },
       },
@@ -229,7 +221,7 @@ $(document).ready(function () {
         properties: {
           hintContent: "s.n-fit",
           name: "s.n-fit",
-          address: "Москва",
+          address: "г. Москва, Исаковского, 33",
           link: "https://s.n-fit.ru/",
         },
       },
@@ -238,7 +230,8 @@ $(document).ready(function () {
         properties: {
           hintContent: "selform",
           name: "selform",
-          address: "Москва",
+          address:
+            "Москва, Ул. Халтуринская 9 стр. 1, м. Преображенская площадь",
           link: "https://selform.fitness/",
         },
       },
@@ -247,7 +240,7 @@ $(document).ready(function () {
         properties: {
           hintContent: "vifit",
           name: "vifit",
-          address: "Сургут",
+          address: "Сургут, Университетская улица, 15,",
           link: "https://vifit.su/",
         },
       },
@@ -292,5 +285,69 @@ $(document).ready(function () {
         });
       }
     });
+  });
+  $(".ajax-form form").live("submit", function (e) {
+    var form = $(this);
+    var url = $(form).attr("action");
+    var id = $(form).parents(".ajax-form").attr("id");
+    $(form).css("opacity", "0.5");
+
+    var fio = form.find('input[name="name"]').val();
+    var phone = form.find('input[name="phone"]').val();
+    var mail = form.find('input[name="email"]').val();
+
+    dataLayer.push({
+      event: "formSubmit",
+      formid: $(form).find("[name=formid]").val(),
+      name: fio,
+      phone: phone,
+      mail: mail,
+    });
+
+    $.ajax({
+      type: "POST",
+      url: url,
+      data: $(form).serialize(),
+      cache: false,
+      success: function (msg) {
+        /* send calltouch */
+        try {
+          var ct_site_id = "27107";
+          var sub = "Заявка";
+          var ct_data = {
+            fio: fio,
+            phoneNumber: phone,
+            email: mail,
+            subject: sub,
+            sessionId: window.call_value,
+          };
+          if (!!phone || !!mail) {
+            jQuery.ajax({
+              url:
+                "https://api-node8.calltouch.ru/calls-service/RestAPI/requests/" +
+                ct_site_id +
+                "/register/",
+              dataType: "json",
+              type: "POST",
+              data: ct_data,
+              async: false,
+            });
+          }
+        } catch (e) {}
+        /* send calltouch */
+
+        msg = $("#" + id, msg).html();
+        $("#" + id).html(msg);
+        //$(form).parents('.ajax-form').parent().html(msg);
+        $(form).css("opacity", "1");
+      },
+    });
+    return false;
+  });
+  var e = document.querySelectorAll('input[type="tel"]');
+  jQuery(e).inputmask({
+    mask: ["+7 (999) 999 99 99", "8 (999) 999 99 99"],
+    greedy: !1,
+    placeholder: "_",
   });
 });

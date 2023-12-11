@@ -36,8 +36,8 @@ $settings['templates'] = array(
         <div class="row gy-3">
             <div class="col-12 col-sm-6">
                 <div class="slider__flex align-items-center align-items-sm-start h-100 justify-content-between flex-column d-flex">
-                    <div class="slider__box-img">
-                        <img src="[+image+]" alt="[+title+]" title="[+title+]" class="slider__img" />
+                    <div class="slider__box-img d-flex">
+                        <img src="[+image+]" alt="[+title+]" class="slider__img" />
                     </div>
                     <div class="slider__content d-flex flex-column align-items-center align-items-sm-start">
                         <div class="slider__region fs-16 lh-normal ps-4">Регион</div>
@@ -52,7 +52,7 @@ $settings['templates'] = array(
                         <div class="slider__text fs-16 lh-normal">Число заявок</div>
                     </div>
                     <div class="slider__content d-flex flex-column align-items-center align-items-sm-start">
-                        <div class="slider__num fs-30 fw-900 lh-normal">[+price+]</div>
+                        <div class="slider__num fs-30 fw-900 lh-normal">[+price+] RUB</div>
                         <div class="slider__text fs-16 lh-normal">Стоимость заявки</div>
                     </div>
                 </div>

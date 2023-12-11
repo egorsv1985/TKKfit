@@ -25,7 +25,7 @@ $settings['templates'] = array(
         <div class="trust__box-img d-flex justify-content-center align-items-center h-100">
             <picture>
                 <source srcset="[+image+]" type="image/webp">
-                <img src="[+image+]" alt="[+title+]" title="[+title+]" class="trust__img w-100 h-auto" />
+                <img src="[+image+]" alt="[+title+]" class="trust__img w-100 h-auto" />
             </picture>        
         </div>
     </div>

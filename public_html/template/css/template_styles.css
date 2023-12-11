@@ -436,9 +436,10 @@ h6 {
   width: 100%;
   z-index: -1;
 }
-
+.btn-close {
+  background: url("../images/icons/close.svg") center/31px no-repeat;
+}
 .form__input {
-  max-width: 356px;
   width: 100%;
 }
 .form__input::-moz-placeholder {
@@ -457,7 +458,25 @@ h6 {
   line-height: normal;
   letter-spacing: 4.2px;
 }
-
+.form__btn {
+  background-color: #e2484d;
+  color: #fff;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  border-radius: 5px;
+  padding: 15px 25px;
+  text-wrap: nowrap;
+}
+.form__btn:hover,
+.form__btn:active {
+  background-color: #e2484d;
+  filter: brightness(120%);
+  -ms-filter: brightness(120%);
+  -webkit-filter: brightness(120%);
+  -moz-filter: brightness(120%);
+  -o-filter: brightness(120%);
+}
 .open .header__wrapper {
   display: flex;
   position: absolute;
