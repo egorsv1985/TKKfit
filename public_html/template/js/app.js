@@ -84,6 +84,7 @@ $(document).ready(function () {
       clusterDisableClickZoom: true,
       clusterHideIconOnBalloonOpen: false,
       geoObjectHideIconOnBalloonOpen: false,
+      clusterIconColor: "#2F3A5A",
     });
 
     var placemarks = [

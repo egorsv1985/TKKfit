@@ -50,6 +50,9 @@
 </footer>
 <!-- кнопка вверх -->
 <div class="scroll-up">
+	<svg width="12" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<path d="M0 6.5l11.25 6.495V.005L0 6.5z" fill="#fff" />
+	</svg>
 	<svg class="scroll-up__svg" viewBox="-2 -2 52 52">
 		<path class="scroll-up__svg-path">
 			d="M24, 0
