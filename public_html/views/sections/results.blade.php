@@ -4,5 +4,6 @@
 			наши результаты
 		</div>
 		{!! $modx->runSnippet('multiTV', ['tvName' => 'results', 'display' => 'all']) !!}
+
 	</div>
 </section>

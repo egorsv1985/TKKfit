@@ -48,6 +48,17 @@
 		</div>
 	</div>
 </footer>
+<!-- кнопка вверх -->
+<div class="scroll-up">
+	<svg class="scroll-up__svg" viewBox="-2 -2 52 52">
+		<path class="scroll-up__svg-path">
+			d="M24, 0
+			a24,24 0 0,1 0,48
+			a24,24 0 0,1 0,-48
+			"
+		</path>
+	</svg>
+</div>
 <!-- Modal -->
 <div class="modal fade" id="callback" tabindex="-1" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
 	<div class="modal-dialog modal-dialog-centered" role="document">

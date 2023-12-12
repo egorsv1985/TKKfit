@@ -46,25 +46,25 @@ $(document).ready(function () {
     swipe: true,
     arrows: true,
     cssEase: "linear",
+
     slidesToShow: 3,
-    slidesToScroll: 3,
+    slidesToScroll: 1,
     responsive: [
       {
-        breakpoint: 992,
+        breakpoint: 1100,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 2,
         },
       },
       {
         breakpoint: 768,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1,
         },
       },
     ],
   });
+
   ymaps.ready(function () {
     // Создаем карту и указываем центр и масштаб
     var myMap = new ymaps.Map("map", {
@@ -284,6 +284,38 @@ $(document).ready(function () {
       }
     });
   });
+  const offset = 100; // Определяем смещение для активации кнопки "вверх"
+  const scrollUp = $(".scroll-up"); // Находим кнопку "вверх" по классу
+  const scrollUpSvgPath = $(".scroll-up__svg-path"); // Находим путь SVG кнопки "вверх" по классу
+  const pathLength = scrollUpSvgPath[0].getTotalLength(); // Получаем общую длину пути SVG
+
+  scrollUpSvgPath.css("stroke-dasharray", `${pathLength} ${pathLength}`); // Устанавливаем свойство stroke-dasharray для анимации пути SVG
+  scrollUpSvgPath.css("transition", "stroke-dashoffset 20ms"); // Устанавливаем переход для свойства stroke-dashoffset
+
+  const getTop = () => window.pageYOffset || document.documentElement.scrollTop; // Функция для получения текущей позиции прокрутки страницы
+
+  const updateDashoffset = () => {
+    const height = document.documentElement.scrollHeight - window.innerHeight; // Получаем высоту всей страницы
+    const dashoffset = pathLength - (getTop() * pathLength) / height; // Вычисляем смещение пути SVG в зависимости от позиции прокрутки
+    scrollUpSvgPath.css("stroke-dashoffset", dashoffset); // Устанавливаем свойство stroke-dashoffset для анимации пути SVG
+  };
+
+  $(window).scroll(function () {
+    // Обработчик события прокрутки страницы
+    updateDashoffset(); // Вызываем функцию для обновления смещения пути SVG
+
+    if (getTop() > offset) {
+      scrollUp.addClass("scroll-up--active"); // Добавляем класс, чтобы показать кнопку "вверх"
+    } else {
+      scrollUp.removeClass("scroll-up--active"); // Удаляем класс, чтобы скрыть кнопку "вверх"
+    }
+  });
+
+  scrollUp.click(function () {
+    // Обработчик события клика по кнопке "вверх"
+    $("html, body").animate({ scrollTop: 0 }, "smooth"); // Плавно прокручиваем страницу вверх
+  });
+
   console.log("hello");
   $(".ajax-form form").live("submit", function (e) {
     var form = $(this);
