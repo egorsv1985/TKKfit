@@ -2,7 +2,7 @@
 	<div class="container">
 		<div class="row gy-4">
 			<div class="col-12 col-lg-4">
-				<div class="advantages__content d-flex flex-column justify-content-center gap-4 h-100">
+				<div class="advantages__content d-flex flex-column justify-content-center gap-4 h-100 wow animate__jackInTheBox" data-wow-delay="0.5s">
 					<div class="advantages__title fs-36 fw-700 text-uppercase">
 						Преимущества работы с нами
 					</div>

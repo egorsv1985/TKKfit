@@ -4,7 +4,7 @@
 			<div class="slider__controls-btns d-flex gap-4"></div>
 			<div class="slider__controls-dots d-none d-md-block"></div>
 
-			<div class="promo__content d-flex flex-column">
+			<div class="promo__content d-flex flex-column wow animate__fadeIn">
 				<button type="button" data-bs-toggle="modal" data-bs-target="#callback" class="promo__button button text-start fs-24 lh-normal position-relative">
 					<span>Оставить заявку<br />
 						на продвижение</span>

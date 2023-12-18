@@ -22,7 +22,7 @@ $settings['templates'] = array(
     'rowTpl' =>
     '
     <div class="col-6 col-sm-4 col-lg-2">
-        <div class="trust__box-img d-flex justify-content-center align-items-center h-100">
+        <div class="trust__box-img d-flex justify-content-center align-items-center h-100 wow animate__heartBeat">
             <picture>
                 <source srcset="[+image+]" type="image/webp">
                 <img src="[+image+]" alt="[+title+]" class="trust__img w-100 h-auto" />

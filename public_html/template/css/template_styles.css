@@ -222,7 +222,7 @@ body {
 input,
 button,
 textarea {
-  font-family: "Roboto";
+  /* font-family: "Roboto"; */
   font-size: inherit;
 }
 
@@ -449,14 +449,13 @@ h6 {
 }
 .form__input::placeholder {
   color: #cecece;
-  letter-spacing: 4.2px;
+
   font-size: 20px;
 }
 .form .form-control {
   font-size: 20px;
   font-weight: 400;
   line-height: normal;
-  letter-spacing: 4.2px;
 }
 .form__btn {
   background-color: #e2484d;
@@ -898,6 +897,7 @@ h6 {
 
 .results .slider__box-img img {
   width: inherit;
+  min-width: 100px;
 }
 .results .slider__flex {
   row-gap: 15px;
@@ -945,6 +945,9 @@ h6 {
 .services__title {
   margin-top: 75px;
 }
+.services__item:hover {
+  color: #e2484d;
+}
 .services__item::before {
   content: "";
   display: block;
@@ -968,7 +971,13 @@ h6 {
 }
 .trust__box-img img,
 .trust__box-img picture {
+  transition: all 0.5s ease-in-out;
   filter: grayscale(100%);
+}
+.trust__box-img:hover img,
+.trust__box-img:hover picture {
+  filter: grayscale(0);
+  transform: scale(1.2);
 }
 .slick-slider {
   z-index: 1;

@@ -1,6 +1,6 @@
 <section class="prices" id="prices">
 	<div class="container">
-		<div class="prices__title fs-36 fw-700 lh-normal text-center text-uppercase">
+		<div class="prices__title fs-36 fw-700 lh-normal text-center text-uppercase wow animate__zoomIn">
 			Сколько стоит продвижение фитнес-клуба
 		</div>
 		{!! $modx->runSnippet('multiTV', ['tvName' => 'price', 'display' => 'all']) !!}

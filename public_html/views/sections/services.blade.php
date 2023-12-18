@@ -1,8 +1,8 @@
 <section class="services bg-dark py-5" id="services">
 	<div class="container">
 		<div class="row pb-5">
-			<div class="col-12 col-lg-4 order-1 order-lg-0 services__pseudo position-relative">
-				<div class="services__box-img position-relative">
+			<div class="col-12 col-lg-4 order-1 order-lg-0 services__pseudo position-relative ">
+				<div class="services__box-img position-relative wow animate__zoomInLeft">
 					<picture>
 						<source srcset="template/images/forma.webp" type="image/webp"><img src="template/images/forma.png" alt="forma" class="services__img" />
 					</picture>
@@ -11,7 +11,7 @@
 						продвижении вашего бизнеса
 					</div>
 				</div>
-				<form action="#" class="services__form form">
+				<form action="#" class="services__form form animate__zoomInLeft" data-wow-delay="0.2s">
 					<div class="form-group mb-5 position-relative">
 						<input type="tel" class="form-control form__input py-4 ps-3" name="tel" id="tel" placeholder="+7 (___) ___-__-__" required />
 					</div>
