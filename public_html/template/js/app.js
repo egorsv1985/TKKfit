@@ -216,7 +216,7 @@ $(document).ready(function () {
         properties: {
           hintContent: "o.n-fit",
           name: "o.n-fit",
-          address: "Адрес метки 1",
+          address: "г. Одинцово, Вокзальная, 39Б",
           link: "https://www.o.n-fit.ru/",
         },
       },
@@ -253,13 +253,61 @@ $(document).ready(function () {
         properties: {
           hintContent: "vifit",
           name: "vifit",
-          address: "Сургут, Университетская улица, 15,",
+          address: "Сургут, Университетская улица, 15",
+          link: "https://vifit.su/",
+        },
+      },
+      {
+        coordinates: [55.991032, 37.21952],
+        properties: {
+          hintContent: "alexfit",
+          name: "alexfit",
+          address: "г. Зеленоград, Савелкинский проезд, д. 8",
           link: "https://vifit.su/",
         },
       },
     ];
 
     // Создаем метки и добавляем их в кластеризатор
+    // for (var i = 0; i < placemarks.length; i++) {
+    //   var placemark = new ymaps.Placemark(
+    //     placemarks[i].coordinates,
+    //     {
+    //       hintContent: placemarks[i].properties.hintContent,
+    //       balloonContent:
+    //         '<div class="balloonHead"><strong><a target="_blank" href="' +
+    //         placemarks[i].properties.link +
+    //         '">' +
+    //         placemarks[i].properties.name +
+    //         "</a></strong></div><p>" +
+    //         placemarks[i].properties.address +
+    //         "</p>",
+    //     },
+    //     {
+    //       iconLayout: "default#image",
+    //       iconImageHref: "template/images/marker.png",
+    //       iconImageSize: [30, 42],
+    //       iconImageOffset: [-5, -38],
+    //       iconContentLayout: MyIconContentLayout,
+    //     }
+    //   );
+
+    //   clusterer.add(placemark);
+    // }
+
+    // Добавляем кластеризатор на карту
+    // myMap.geoObjects.add(clusterer);
+
+    // При клике на метку открываем балун
+    // clusterer.events.add("click", function (e) {
+    //   var target = e.get("target");
+    //   if (target && target.getGeoObjects) {
+    //     myMap.setCenter(target.geometry.getCoordinates(), myMap.getZoom() + 1, {
+    //       duration: 500,
+    //     });
+    //   }
+    // });
+    // Создаем метки и добавляем их на карту
     for (var i = 0; i < placemarks.length; i++) {
       var placemark = new ymaps.Placemark(
         placemarks[i].coordinates,
@@ -279,25 +327,11 @@ $(document).ready(function () {
           iconImageHref: "template/images/marker.png",
           iconImageSize: [30, 42],
           iconImageOffset: [-5, -38],
-          iconContentLayout: MyIconContentLayout,
         }
       );
 
-      clusterer.add(placemark);
+      myMap.geoObjects.add(placemark);
     }
-
-    // Добавляем кластеризатор на карту
-    myMap.geoObjects.add(clusterer);
-
-    // При клике на метку открываем балун
-    clusterer.events.add("click", function (e) {
-      var target = e.get("target");
-      if (target && target.getGeoObjects) {
-        myMap.setCenter(target.geometry.getCoordinates(), myMap.getZoom() + 1, {
-          duration: 500,
-        });
-      }
-    });
   });
   const offset = 100; // Определяем смещение для активации кнопки "вверх"
   const scrollUp = $(".scroll-up"); // Находим кнопку "вверх" по классу
